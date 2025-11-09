@@ -1,0 +1,766 @@
+{
+  "meta": {
+    "id": "co-oxford-digital-001",
+    "name": "Oxford Digital Works",
+    "legalName": "Oxford Digital Works Ltd",
+    "tagline": "Designing digital experiences that scale",
+    "domain": "oxford-digital.example",
+    "primaryLanguage": "en-US",
+    "locale": "en_ID",
+    "timeZone": "Asia/Jakarta",
+    "foundedYear": 2016,
+    "companyType": "Private",
+    "employees": 78,
+    "industry": [
+      "Software Development",
+      "UX/UI Design",
+      "Cloud Consulting",
+      "Data Analytics"
+    ],
+    "logo": {
+      "svg": "/assets/logo-oxford-digital.svg",
+      "png": "/assets/logo-oxford-digital.png",
+      "alt": "Oxford Digital Works logo"
+    },
+    "coverImage": "/assets/cover-office.jpg",
+    "shortDescription": "Oxford Digital Works is a full-service digital product studio building web and mobile experiences for growth-stage startups and enterprise teams.",
+    "longDescription": "Oxford Digital Works crafts web and mobile products with a focus on high-quality design, engineering discipline, and measurable business outcomes. We pair product strategy with fast engineering sprints to deliver customer-facing apps, internal tools, and design systems."
+  },
+  "contact": {
+    "headquarters": {
+      "addressLine1": "Jl. Merdeka No. 88",
+      "addressLine2": "Menteng, Central Jakarta",
+      "city": "Jakarta",
+      "postalCode": "10310",
+      "country": "Indonesia",
+      "lat": -6.2,
+      "lng": 106.816666
+    },
+    "offices": [
+      {
+        "name": "Jakarta HQ",
+        "address": "Jl. Merdeka No. 88, Menteng, Central Jakarta, 10310",
+        "phone": "+62-21-555-0101",
+        "email": "hello@oxford-digital.example",
+        "hours": "Mon-Fri 09:00-18:00"
+      },
+      {
+        "name": "Remote / Distributed",
+        "address": "Remote-first (APAC/EMEA)",
+        "phone": null,
+        "email": "remotesupport@oxford-digital.example",
+        "hours": "Mon-Fri 09:00-18:00 GMT+7 (flexible)"
+      }
+    ],
+    "sales": {
+      "email": "sales@oxford-digital.example",
+      "phone": "+62-21-555-0199",
+      "leadForm": {
+        "enabled": true,
+        "method": "mailto",
+        "mailto": "sales@oxford-digital.example",
+        "notes": "For demo requests, preferred method is the contact form which sends an email."
+      }
+    },
+    "press": {
+      "email": "press@oxford-digital.example"
+    },
+    "careers": {
+      "email": "careers@oxford-digital.example"
+    },
+    "social": {
+      "website": "https://oxford-digital.example",
+      "linkedin": "https://linkedin.com/company/oxford-digital-works",
+      "twitter": "https://twitter.com/oxforddigitalwk",
+      "instagram": "https://instagram.com/oxforddigitalwk",
+      "dribbble": "https://dribbble.com/oxford-digital-works",
+      "github": "https://github.com/oxford-digital-works"
+    }
+  },
+  "legal": {
+    "registration": {
+      "companyNumber": "NPWP-1234567890",
+      "registrationOffice": "Ministry of Law and Human Rights, Indonesia",
+      "registrationDate": "2016-03-15"
+    },
+    "taxId": "09.123.456.7-098.000",
+    "vatRegistered": true,
+    "privacyPolicy": {
+      "url": "/legal/privacy-policy",
+      "lastUpdated": "2025-01-18",
+      "summary": "Collects minimal personal data for contact and recruitment; stores analytics with anonymization; does not sell data."
+    },
+    "termsOfService": {
+      "url": "/legal/terms",
+      "lastUpdated": "2025-01-18"
+    },
+    "certifications": [
+      {
+        "name": "ISO/IEC 27001 (placeholder)",
+        "issuer": "International Standards Org",
+        "id": "ISO27001-ODW-2024",
+        "issuedDate": "2024-07-01",
+        "expires": "2027-07-01"
+      },
+      {
+        "name": "SOC 2 Type II (placeholder)",
+        "issuer": "Independent Auditor",
+        "id": "SOC2-ODW-2025",
+        "issuedDate": "2025-02-10",
+        "expires": "2026-02-10"
+      }
+    ]
+  },
+  "leadership": [
+    {
+      "id": "lead-01",
+      "name": "Armando Putra",
+      "title": "Co-Founder & CEO",
+      "photo": "/assets/team/armando.jpg",
+      "bio": "Product strategist turned founder. Armando leads company direction, partnerships, and enterprise engagements.",
+      "email": "armando.putra@oxford-digital.example",
+      "linkedin": "https://linkedin.com/in/armando-putra-placeholder"
+    },
+    {
+      "id": "lead-02",
+      "name": "Riko Susanto",
+      "title": "CTO",
+      "photo": "/assets/team/riko.jpg",
+      "bio": "Engineering leader with 12+ years building scalable Node.js services and front-end architectures.",
+      "email": "riko.susanto@oxford-digital.example",
+      "linkedin": "https://linkedin.com/in/riko-susanto-placeholder"
+    },
+    {
+      "id": "lead-03",
+      "name": "Dina Hartono",
+      "title": "Head of Design",
+      "photo": "/assets/team/dina.jpg",
+      "bio": "Design systems advocate, content strategist, and motion design lead.",
+      "email": "dina.hartono@oxford-digital.example",
+      "linkedin": "https://linkedin.com/in/dina-hartono-placeholder"
+    }
+  ],
+  "organization": {
+    "departments": [
+      "Engineering",
+      "Design",
+      "Product",
+      "Growth",
+      "People Ops",
+      "Finance",
+      "Customer Success",
+      "Data Science"
+    ],
+    "orgChartSvg": "/assets/org-chart.svg"
+  },
+  "services": [
+    {
+      "id": "svc-01",
+      "title": "Product Strategy & Discovery",
+      "summary": "User research, product-market fit, discovery sprints, roadmap planning.",
+      "details": "2-week discovery, stakeholder workshops, prototyping, and success metrics definition.",
+      "deliverables": [
+        "Roadmap",
+        "Proto (Figma)",
+        "PRD (Product Requirements Document)",
+        "User Personas"
+      ],
+      "engagementModel": "Fixed Price or Time & Materials",
+      "startingPriceUSD": 8000
+    },
+    {
+      "id": "svc-02",
+      "title": "UX/UI Design & Design Systems",
+      "summary": "End-to-end UX and UI focused on accessibility, performance, and design systems.",
+      "deliverables": [
+        "Wireframes",
+        "High-fidelity UI",
+        "Component library (Figma + React)",
+        "Accessibility audit"
+      ],
+      "engagementModel": "Retainer or Project",
+      "startingPriceUSD": 6000
+    },
+    {
+      "id": "svc-03",
+      "title": "Web & Mobile Engineering",
+      "summary": "Frontend (React/Vite/Next) and backend architecture for scalable web apps and PWAs.",
+      "details": "Best practices: CI/CD, testing, monitoring, and infra-as-code.",
+      "techStack": [
+        "React (Vite/Next)",
+        "TypeScript",
+        "Node.js / Express",
+        "PostgreSQL / Supabase",
+        "Firebase (Auth/Hosting)",
+        "Docker",
+        "Redis"
+      ],
+      "engagementModel": "Time & Materials",
+      "startingPriceUSD": 12000
+    },
+    {
+      "id": "svc-04",
+      "title": "Cloud & Data Engineering",
+      "summary": "Cloud migration, analytics pipeline, and data visualization.",
+      "deliverables": [
+        "ETL pipelines",
+        "Data warehouse schema",
+        "Dashboards (Looker/Metabase)"
+      ],
+      "engagementModel": "Time & Materials",
+      "startingPriceUSD": 10000
+    },
+    {
+      "id": "svc-05",
+      "title": "Maintenance & Support",
+      "summary": "SLA-backed support, security patching, and regular audits.",
+      "plans": [
+        {
+          "name": "Standard",
+          "monthlyUSD": 500,
+          "responseTimeHours": 48
+        },
+        {
+          "name": "Priority",
+          "monthlyUSD": 1500,
+          "responseTimeHours": 4
+        }
+      ]
+    }
+  ],
+  "products": [
+    {
+      "id": "prd-01",
+      "name": "Pulse — Team Analytics",
+      "summary": "Lightweight analytics dashboard for product & ops teams.",
+      "category": "SaaS",
+      "features": [
+        "User funnels",
+        "Weekly active users",
+        "Cohort analysis",
+        "Exportable CSV"
+      ],
+      "pricing": {
+        "freeTier": true,
+        "paid": {
+          "starterUSD": 29,
+          "businessUSD": 199,
+          "enterpriseCustom": true
+        }
+      },
+      "links": {
+        "productPage": "/products/pulse",
+        "demo": "/products/pulse/demo"
+      }
+    }
+  ],
+  "clients": [
+    {
+      "id": "client-01",
+      "name": "Kirana Retail",
+      "industry": "Retail",
+      "logo": "/assets/clients/kirana.png",
+      "testimonial": {
+        "quote": "Oxford Digital helped us reduce checkout abandonment by 28% in 3 months.",
+        "author": "Sabrina H.",
+        "title": "Head of Product"
+      }
+    },
+    {
+      "id": "client-02",
+      "name": "Finax Bank (Pilot)",
+      "industry": "Fintech",
+      "logo": "/assets/clients/finax.png",
+      "testimonial": {
+        "quote": "Delivered secure, auditable features and a modern UX under a tight timeline.",
+        "author": "Arief T.",
+        "title": "VP, Digital Channels"
+      }
+    }
+  ],
+  "caseStudies": [
+    {
+      "id": "case-001",
+      "title": "Kirana Retail — Checkout Optimization",
+      "summary": "Improvements to checkout flow, A/B experiments, and performance tuning.",
+      "challenge": "High cart abandonment and slow checkout times on mobile.",
+      "solution": "Redesigned checkout experience, lazy-load assets, introduced payment microflow.",
+      "results": {
+        "reducedAbandonmentPct": 28,
+        "reducedLoadTimeMs": 620,
+        "conversionUpliftPct": 14
+      },
+      "durationWeeks": 12,
+      "teamSize": 6,
+      "link": "/case-studies/kirana-checkout"
+    },
+    {
+      "id": "case-002",
+      "title": "Finax Bank — Secure Onboarding",
+      "summary": "Built an onboarding microservice and secure document pipeline.",
+      "challenge": "Regulatory requirements and user trust during onboarding.",
+      "solution": "Serverless document verification + encrypted storage and audit logs.",
+      "results": {
+        "onboardingDropRatePct": 9,
+        "timeToKYCdays": 0.8
+      },
+      "durationWeeks": 16,
+      "teamSize": 8,
+      "link": "/case-studies/finax-onboarding"
+    }
+  ],
+  "partners": [
+    {
+      "name": "Supabase",
+      "type": "Technology Partner",
+      "logo": "/assets/partners/supabase.png"
+    },
+    {
+      "name": "Vercel",
+      "type": "Hosting Partner",
+      "logo": "/assets/partners/vercel.png"
+    }
+  ],
+  "brand": {
+    "colors": {
+      "primary": "#0B4DB1",
+      "primaryVariant": "#093A88",
+      "accent": "#FF6B35",
+      "muted": "#6B7280",
+      "background": "#FFFFFF",
+      "surface": "#F8FAFC",
+      "success": "#16a34a",
+      "danger": "#dc2626"
+    },
+    "typography": {
+      "primary": "Inter, system-ui, -apple-system, 'Segoe UI'",
+      "heading": "Space Grotesk, Inter",
+      "baseSize": 16,
+      "scale": [12, 14, 16, 20, 24, 32, 40]
+    },
+    "logoUsage": {
+      "clearspace": "Use 24px clearspace on all sides",
+      "minWidthPx": 120,
+      "donts": [
+        "Do not distort",
+        "Do not rotate",
+        "Do not change color outside palette"
+      ]
+    },
+    "iconography": {
+      "library": "lucide-react",
+      "styleGuidelines": "Line based icons, stroke 2px, 24px grid"
+    },
+    "voiceAndTone": {
+      "tone": "Confident, approachable, no-nonsense",
+      "dos": ["Be concise", "Be human", "Give evidence"],
+      "donts": ["Overpromise", "Use buzzword-heavy copy"]
+    }
+  },
+  "design": {
+    "lowFiSketches": [
+      {
+        "name": "homepage-structure",
+        "file": "/design/lowfi/homepage-structure.sketch",
+        "notes": "Hero, services cards, case studies, footer. Prioritize quick scanning."
+      },
+      {
+        "name": "about-page-flow",
+        "file": "/design/lowfi/about-page.sketch",
+        "notes": "Company timeline, leadership, mission and values"
+      }
+    ],
+    "freestyleMoodboard": {
+      "mood": "Modern, calm, confident",
+      "textures": ["subtle-gradients", "soft-shadows", "glass-panels"],
+      "illustrationStyle": "Flat, geometric, friendly",
+      "motion": "Micro-interactions, smooth easing (cubic-bezier)"
+    },
+    "dribbbleReferences": [
+      "https://dribbble.com/shots/xxxxxx-design-system",
+      "https://dribbble.com/shots/yyyyyy-enterprise-dashboard",
+      "https://dribbble.com/shots/zzzzzz-landing-page-hero"
+    ],
+    "designTokens": {
+      "spacing": {
+        "xs": 4,
+        "sm": 8,
+        "md": 16,
+        "lg": 24,
+        "xl": 40
+      },
+      "borderRadius": {
+        "sm": 6,
+        "md": 12,
+        "lg": 20
+      }
+    }
+  },
+  "frontend": {
+    "pages": [
+      {
+        "id": "page-home",
+        "path": "/",
+        "title": "Home",
+        "sections": [
+          {
+            "id": "hero",
+            "component": "Hero",
+            "props": {
+              "heading": "Designing digital experiences that scale",
+              "subheading": "Product strategy, design systems, and engineering to ship better products.",
+              "ctaPrimary": {
+                "text": "Get a demo",
+                "href": "/contact"
+              },
+              "ctaSecondary": {
+                "text": "See case studies",
+                "href": "/case-studies"
+              }
+            }
+          },
+          {
+            "id": "services",
+            "component": "ServicesGrid",
+            "props": {
+              "heading": "Core services",
+              "itemsSource": "services"
+            }
+          },
+          {
+            "id": "caseStudies",
+            "component": "FeaturedCaseStudies",
+            "props": {
+              "heading": "Case studies",
+              "limit": 3
+            }
+          },
+          {
+            "id": "logos",
+            "component": "ClientLogoStrip",
+            "props": {
+              "heading": "Trusted by",
+              "itemsSource": "clients"
+            }
+          }
+        ]
+      },
+      {
+        "id": "page-about",
+        "path": "/about",
+        "title": "About",
+        "sections": [
+          {
+            "id": "mission",
+            "component": "CompanyMission",
+            "props": {
+              "missionText": null,
+              "visionText": null
+            }
+          },
+          {
+            "id": "leadership",
+            "component": "TeamGrid",
+            "props": {
+              "itemsSource": "leadership"
+            }
+          },
+          {
+            "id": "timeline",
+            "component": "CompanyTimeline",
+            "props": {
+              "events": [
+                { "year": 2016, "text": "Company founded" },
+                { "year": 2018, "text": "First enterprise client" },
+                { "year": 2021, "text": "Launched product Pulse" }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "page-services",
+        "path": "/services",
+        "title": "Services",
+        "sections": []
+      },
+      {
+        "id": "page-case-studies",
+        "path": "/case-studies",
+        "title": "Case Studies",
+        "sections": []
+      },
+      {
+        "id": "page-contact",
+        "path": "/contact",
+        "title": "Contact",
+        "sections": [
+          {
+            "id": "contactForm",
+            "component": "ContactForm",
+            "props": {
+              "method": "mailto",
+              "recipientEmail": "sales@oxford-digital.example",
+              "fields": [
+                { "name": "name", "type": "text", "required": true },
+                { "name": "email", "type": "email", "required": true },
+                { "name": "company", "type": "text", "required": false },
+                { "name": "message", "type": "textarea", "required": true }
+              ],
+              "captcha": false
+            }
+          }
+        ]
+      }
+    ],
+    "uiComponents": [
+      "Hero",
+      "ServicesGrid",
+      "TeamGrid",
+      "CaseStudyCard",
+      "ClientLogoStrip",
+      "Footer",
+      "Navbar",
+      "ContactForm",
+      "SEOHead"
+    ],
+    "assets": {
+      "images": "/assets/*.png",
+      "svg": "/assets/icons/*.svg"
+    },
+    "i18n": {
+      "enabled": false,
+      "suggested": ["en-US", "id-ID"]
+    }
+  },
+  "highLevelArchitecture": {
+    "summary": "Static single-page application served from CDN. Site content is static JSON. No server backend required for public site. Optional serverless endpoint for contact form if needed.",
+    "diagramText": "Browser -> CDN -> Static SPA (React/Vite) -> static JSON (embedded or fetched) -> optional serverless function (contactForm) -> mail relay",
+    "components": {
+      "frontend": {
+        "framework": "React (Vite)",
+        "rendering": "Client-side SPA or static prerender with SSG",
+        "routing": "React Router",
+        "state": "Local state (Context / Zustand) only if needed"
+      },
+      "hosting": {
+        "options": ["Vercel", "Netlify", "Firebase Hosting"],
+        "cdn": "Built-in CDN (Vercel/Netlify) or Cloudflare"
+      },
+      "data": {
+        "primary": "static JSON (this file)",
+        "alternate": "Headless CMS (Contentful / Sanity / Notion) for non-dev editing"
+      },
+      "contactForm": {
+        "noBackendMode": "mailto or formsubmit.co",
+        "optionalServerless": {
+          "provider": "Vercel Serverless / Netlify Functions / Firebase Cloud Functions",
+          "purpose": "Send email, store lead to Google Sheets or Zapier"
+        }
+      },
+      "analytics": {
+        "recommended": [
+          "Plausible (privacy-first)",
+          "Google Analytics 4 optional"
+        ],
+        "performance": "Defer analytics until after first paint"
+      },
+      "monitoring": {
+        "errorReporting": "Sentry optional",
+        "uptime": "External uptime monitor if using serverless endpoints"
+      },
+      "security": {
+        "https": true,
+        "helmetHeaders": "Set by hosting provider",
+        "contentSecurityPolicy": "Restrictive but allow CDN + analytics"
+      }
+    }
+  },
+  "seo": {
+    "defaultMeta": {
+      "titleTemplate": "%s · Oxford Digital Works",
+      "defaultTitle": "Oxford Digital Works — Digital Product Studio",
+      "description": "We build web & mobile products for startups and enterprises. Product strategy, design systems, and engineering.",
+      "keywords": [
+        "digital agency",
+        "product design",
+        "react development",
+        "ui ux",
+        "jakarta agency"
+      ],
+      "openGraph": {
+        "type": "website",
+        "image": "/assets/og-image.png",
+        "locale": "en_US"
+      },
+      "twitterCard": {
+        "card": "summary_large_image",
+        "creator": "@oxforddigitalwk"
+      }
+    },
+    "sitemap": [
+      "/",
+      "/about",
+      "/services",
+      "/case-studies",
+      "/contact",
+      "/legal/privacy-policy",
+      "/legal/terms"
+    ],
+    "robots": "User-agent: *\nAllow: /"
+  },
+  "contentStrategy": {
+    "blog": {
+      "enabled": false,
+      "suggestedTopics": [
+        "Product leadership",
+        "Design systems",
+        "Case studies",
+        "Engineering best practices"
+      ]
+    },
+    "pressKit": {
+      "url": "/press",
+      "assets": ["/assets/press/logo.png", "/assets/press/one-pager.pdf"]
+    }
+  },
+  "careers": {
+    "openRoles": [
+      {
+        "id": "role-01",
+        "title": "Senior Frontend Engineer",
+        "team": "Engineering",
+        "location": "Jakarta / Remote",
+        "type": "Full-time",
+        "summary": "React + TypeScript, design systems experience required",
+        "applyEmail": "careers@oxford-digital.example"
+      },
+      {
+        "id": "role-02",
+        "title": "Product Designer",
+        "team": "Design",
+        "location": "Remote",
+        "type": "Contract",
+        "summary": "System thinking, prototyping, and Figma expertise",
+        "applyEmail": "careers@oxford-digital.example"
+      }
+    ],
+    "benefits": [
+      "Flexible hours",
+      "Work-from-home stipend",
+      "Health benefits (local)",
+      "Learning budget"
+    ]
+  },
+  "pressAndAwards": [
+    {
+      "title": "Top 10 Product Agencies — Local Tech Magazine",
+      "date": "2022-11-12",
+      "link": "/press/top-10-product-agencies"
+    }
+  ],
+  "analyticsAndMetrics": {
+    "dashboards": [
+      {
+        "name": "Acquisition Overview (placeholder)",
+        "description": "Page views, referral source, conversion from contact form"
+      }
+    ],
+    "keyMetricsToTrack": [
+      "Unique visitors",
+      "Conversion rate (contact form)",
+      "Time on page",
+      "Bounce rate"
+    ]
+  },
+  "polishAndE2EQA": {
+    "preLaunchChecklist": [
+      "All pages have meta title + description",
+      "Images optimized (webp) and sized",
+      "Mobile & desktop responsive check",
+      "Links validated (no 404)",
+      "Accessibility basic audit (contrast, alt text, landmark roles)",
+      "Favicon and touch icons present",
+      "Robots.txt and sitemap in public",
+      "Cookie / analytics consent (if GA used)"
+    ],
+    "e2eTestCases": [
+      {
+        "id": "e2e-001",
+        "title": "Homepage loads and hero CTA navigates",
+        "steps": [
+          "Open /",
+          "Assert hero heading visible",
+          "Click primary CTA",
+          "Assert navigation to /contact (or mailto triggered)"
+        ]
+      },
+      {
+        "id": "e2e-002",
+        "title": "Contact form submission (mailto fallback)",
+        "steps": [
+          "Open /contact",
+          "Fill required fields",
+          "Click submit",
+          "Assert a mailto link is opened or success message is shown"
+        ]
+      },
+      {
+        "id": "e2e-003",
+        "title": "Responsive navigation",
+        "steps": [
+          "Set viewport to mobile",
+          "Open burger menu",
+          "Assert visible nav links",
+          "Navigate to /about and assert page title"
+        ]
+      },
+      {
+        "id": "e2e-004",
+        "title": "SEO meta tags present",
+        "steps": [
+          "Open /",
+          "Check document title contains 'Oxford Digital Works'",
+          "Check og:image meta exists"
+        ]
+      }
+    ],
+    "sampleCypressScript": "describe('Home page', () => { it('loads and navigates', () => { cy.visit('/'); cy.contains('Designing digital experiences that scale'); cy.get('[data-cy=cta-get-demo]').click(); cy.url().should('include','/contact'); }); });"
+  },
+  "devHints": {
+    "repo": "github.com/oxford-digital-works/website (placeholder)",
+    "recommendedSetup": [
+      "Vite + React + TypeScript (optional)",
+      "Tailwind CSS for quick styles or custom CSS-in-JS",
+      "React Router for page routing",
+      "Use static data import: import data from '/src/data/data.json'",
+      "Deploy to Vercel / Netlify / Firebase Hosting"
+    ],
+    "imageOptimization": "Use srcset + lazy loading + webp fallback",
+    "performanceTips": [
+      "Preload hero image",
+      "Critical CSS inline",
+      "Defer non-critical scripts"
+    ]
+  },
+  "migrationNotes": {
+    "toHeadlessCMS": {
+      "mappingHints": "Top-level keys map to collections: pages, services, clients, caseStudies, leadership, brand",
+      "fieldsToNormalize": [
+        "dates as ISO strings",
+        "images to CDN URLs",
+        "IDs to slug-safe strings"
+      ]
+    }
+  },
+  "examples": {
+    "howToLoad": {
+      "jsImportExample": "import company from './data/data.json'; console.log(company.meta.name);",
+      "fetchExample": "fetch('/data/data.json').then(r=>r.json()).then(data=>console.log(data.meta.name));"
+    }
+  },
+  "metaGenerated": {
+    "createdAt": "2025-11-09T00:00:00+07:00",
+    "createdBy": "placeholder-generator-v1-by-bazel"
+  }
+}

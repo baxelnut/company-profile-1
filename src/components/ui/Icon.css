@@ -1,0 +1,10 @@
+.app-icon {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.2s ease, fill 0.2s ease;
+}
+
+.app-icon text {
+  font-size: clamp(0.65rem, 0.75vw, 0.85rem);
+  font-family: var(--heading);
+}

@@ -1,0 +1,67 @@
+select,
+option {
+  font-family: var(--heading);
+  text-decoration: none;
+  font-weight: 600 !important;
+}
+
+.dropdown-wrapper {
+  position: relative;
+  width: fit-content;
+  display: inline-block;
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+.dropdown-wrapper.full {
+  width: 100% !important;
+}
+
+.dropdown {
+  width: 100%;
+  min-width: 120px;
+  min-height: 1rem;
+
+  appearance: none;
+  padding: 0.5rem 2rem 0.5rem 0.75rem;
+  border-radius: 8px;
+  background-color: var(--card);
+  color: var(--text);
+  transition: border-color 0.2s ease-in-out;
+  border: 1px solid var(--n600);
+
+  font-family: var(--heading);
+  text-decoration: none;
+  font-weight: 600 !important;
+  cursor: pointer;
+}
+
+.dropdown.short,
+.dropdown.short option {
+  font-size: var(--small-h);
+}
+
+.dropdown.rounded-pill {
+  border-radius: 360px;
+}
+
+.dropdown.rounded-soft {
+  border-radius: 6px;
+}
+
+.dropdown-icon {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.dropdown.with-icon {
+  padding-right: 2rem !important;
+}
+
+/* To ensure consistency across browsers (some handle select padding weirdly) */
+select::-ms-expand {
+  display: none; /* hide default arrow on IE/Edge */
+}

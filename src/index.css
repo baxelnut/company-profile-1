@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300..700&family=Plus+Jakarta+Sans:wght@500..800&display=swap");
+
+/* ========= BASE ========= */
+:root {
+  /* Typography */
+  --heading: "Plus Jakarta Sans", sans-serif;
+  --body: "Inter", system-ui, sans-serif;
+
+  line-height: 1.5;
+  color-scheme: light;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Layout */
+  --spacing-inline: 20px;
+  --content-width: calc(100% - 2 * var(--spacing-inline));
+
+  /* Font sizes */
+  --small-h: clamp(0.9rem, 1vw, 1rem);
+  --small-p: clamp(0.8rem, 0.85vw, 0.9rem);
+
+  /* ========= COLOR PALETTE ========= */
+  /* Brand palette */
+  --primary: #00adb5;
+  --secondary: #3a4750;
+  --danger: #da4b4b;
+  --safe: #7ed857;
+  --card: #c4d7e0;
+  --primary-rgb: 0, 173, 181;
+  --secondary-rgb: 58, 71, 80;
+  --danger-rgb: 218, 75, 75;
+  --safe-rgb: 126, 216, 87;
+  --card-rgb: 196, 215, 224;
+
+  /* Neutral scale (dark → light) */
+  --n700: #1c1f23;
+  --n600: #4b4f55;
+  --n500: #6b7077;
+  --n400: #8f949b;
+  --n300: #b5bac1;
+  --n200: #d8dde3;
+  --n700-rgb: 28, 31, 35;
+  --n600-rgb: 75, 79, 85;
+  --n500-rgb: 107, 112, 119;
+  --n400-rgb: 143, 148, 155;
+  --n300-rgb: 181, 186, 193;
+  --n200-rgb: 216, 221, 227;
+
+  /* Background & text */
+  --bg: #eeeeee;
+  --text: #191c21;
+  --on-secondary: var(--n200);
+  --bg-rgb: 238, 238, 238;
+  --text-rgb: 25, 28, 33;
+  --on-secondary-rgb: var(--n200-rgb);
+}
+
+/* ========= TYPOGRAPHY ========= */
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: var(--body);
+  font-weight: 400;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading);
+  font-weight: 600;
+  color: var(--text);
+}
+
+h1 {
+  font-size: clamp(2.5rem, 5vw, 3rem);
+}
+h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+}
+h3 {
+  font-size: clamp(1.75rem, 3.5vw, 2rem);
+}
+h4 {
+  font-size: clamp(1.5rem, 3vw, 1.75rem);
+}
+h5 {
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+}
+h6 {
+  font-size: clamp(1rem, 2vw, 1.25rem);
+}
+
+p,
+li,
+a,
+label,
+span,
+select,
+option {
+  font-family: var(--body);
+  font-size: clamp(0.9rem, 0.9vw, 1rem);
+  font-weight: 400;
+  color: var(--text);
+}
+
+a {
+  color: rgb(var(--secondary-rgb), 0.9);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+a:hover {
+  color: rgb(var(--secondary-rgb), 1);
+  font-weight: 500;
+}
+
+strong {
+  font-weight: 600;
+}
+
+/* ========= UTILITIES ========= */
+.small-p {
+  font-size: var(--small-p);
+  font-family: var(--body);
+  font-weight: 200;
+}
+
+.small-h {
+  font-size: var(--small-h);
+  font-family: var(--heading);
+  font-weight: 600;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  :root {
+    --spacing-inline: 64px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  :root {
+    --spacing-inline: clamp(80px, 5vw, 120px);
+  }
+}

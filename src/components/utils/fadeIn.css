@@ -1,0 +1,42 @@
+.fade-in {
+  margin: 0;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.4s ease-out, transform 0.4s ease-out;
+  will-change: transform, opacity;
+
+  /* 🔒 Touch-safe & scroll-safe settings */
+  pointer-events: none;
+  touch-action: pan-y; /* ← allows vertical scroll immediately */
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto; /* Only re-enable pointer interaction after animation starts */
+}
+
+/* Directions */
+.fade-in.left {
+  transform: translateX(-40px);
+}
+
+.fade-in.left.visible {
+  transform: translateX(0);
+}
+
+.fade-in.right {
+  transform: translateX(40px);
+}
+
+.fade-in.right.visible {
+  transform: translateX(0);
+}
+
+.fade-in.down {
+  transform: translateY(-40px);
+}
+
+.fade-in.down.visible {
+  transform: translateY(0);
+}
