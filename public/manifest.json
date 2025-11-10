@@ -1,0 +1,15 @@
+{
+  "name": "Oxford Digital Works",
+  "short_name": "OxfordDigital",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#eeeeee",
+  "theme_color": "#00adb5",
+  "icons": [
+    {
+      "src": "/assets/logo-oxford-digital.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

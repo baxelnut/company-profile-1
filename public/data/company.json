@@ -20,6 +20,7 @@
     "logo": {
       "svg": "/assets/logo-oxford-digital.svg",
       "png": "/assets/logo-oxford-digital.png",
+      "pngWhite": "/assets/logo-oxford-digital-white.png",
       "alt": "Oxford Digital Works logo"
     },
     "coverImage": "/assets/cover-office.jpg",
@@ -71,7 +72,7 @@
     "social": {
       "website": "https://oxford-digital.example",
       "linkedin": "https://linkedin.com/company/oxford-digital-works",
-      "twitter": "https://twitter.com/oxforddigitalwk",
+      "x": "https://x.com/oxforddigitalwk",
       "instagram": "https://instagram.com/oxforddigitalwk",
       "dribbble": "https://dribbble.com/oxford-digital-works",
       "github": "https://github.com/oxford-digital-works"
@@ -86,12 +87,12 @@
     "taxId": "09.123.456.7-098.000",
     "vatRegistered": true,
     "privacyPolicy": {
-      "url": "/legal/privacy-policy",
+      "url": "/privacy-policy",
       "lastUpdated": "2025-01-18",
       "summary": "Collects minimal personal data for contact and recruitment; stores analytics with anonymization; does not sell data."
     },
     "termsOfService": {
-      "url": "/legal/terms",
+      "url": "/terms-conditions",
       "lastUpdated": "2025-01-18"
     },
     "certifications": [
