@@ -65,21 +65,25 @@
 }
 
 .btn:hover * {
-  color: var(--n700);
-  fill: var(--n700);
+  color: var(--bg);
+  fill: var(--bg);
 }
 
 /* Hollow variant */
 .hollow {
   background-color: var(--glassy);
-  color: var(--n700) !important;
+  color: var(--bg);
   padding: 8px 19px;
-  border: 2px solid var(--text);
-  background-image: linear-gradient(to right, var(--primary), var(--primary));
+  border: var(--border);
+  background-image: linear-gradient(
+    to right,
+    var(--secondary),
+    var(--secondary)
+  );
 }
 
 .hollow:hover {
-  border-color: var(--primary);
+  border-color: var(--secondary);
   background-size: 100% 100%;
   transition: background-size 0.4s ease, color 0.25s ease, border 0.25s ease;
 }
@@ -110,7 +114,7 @@
 }
 
 .only-icon:hover * {
-  fill: var(--bg);
+  fill: var(--on-secondary) !important;
 }
 
 .hollow.only-icon {

@@ -1,0 +1,29 @@
+header,
+header .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+header {
+  z-index: 999;
+  position: sticky;
+  top: 0;
+  background-color: transparent;
+  padding: 0.75rem var(--spacing-inline);
+  transition: background-color 0.6s ease, box-shadow 0.6s ease;
+}
+header.scrolled {
+  background-color: rgba(var(--secondary-rgb), 1);
+  box-shadow: 0 4px 20px rgba(var(--secondary-rgb), 0.2);
+}
+header.scrolled * {
+  color: var(--on-secondary);
+}
+
+header .logo img {
+  height: 100%;
+  max-height: 40px;
+  aspect-ratio: 1;
+}

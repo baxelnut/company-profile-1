@@ -1,0 +1,24 @@
+.menu,
+.menu-wrapper {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.menu-item {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.menu-item p {
+  color: inherit;
+}
+.menu-item:hover p {
+  text-decoration: underline;
+}
+.menu-item.active p {
+  color: var(--primary);
+  font-weight: 600;
+  text-decoration: none;
+}

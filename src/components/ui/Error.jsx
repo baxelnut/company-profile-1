@@ -15,7 +15,7 @@ export default function Error({
   return (
     <div
       className={className}
-      style={{ backgroundColor: `${backgroundColor}` }}
+      style={{ backgroundColor: backgroundColor ?? "transparent" }}
     >
       <div className="error-icon">
         <Icon path={SVG_PATHS.error} size={22} fill="var(--danger)" />
