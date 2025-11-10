@@ -1,14 +1,12 @@
 // Style
 import "./LandingPage.css";
+// Sections
+import Hero from "./sections/Hero";
 
 export default function LandingPage() {
   return (
     <div className="page landing">
-      <p className="puki">Landing Page</p>
-
-      <section className="puki" id="a">
-        a
-      </section>
+      <Hero />
     </div>
   );
 }

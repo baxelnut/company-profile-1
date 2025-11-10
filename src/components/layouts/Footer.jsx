@@ -41,11 +41,7 @@ export default function Footer({ menu }) {
               onSubmit={(e) => e.preventDefault()}
             >
               <Input type="email" placeholder="Enter your email" fullWidth />
-              <Button
-                iconPath={SVG_PATHS.chevronRight}
-                iconSize={22}
-                type="submit"
-              />
+              <Button iconPath={SVG_PATHS.chevronRight} type="submit" />
             </form>
           </div>
         </div>

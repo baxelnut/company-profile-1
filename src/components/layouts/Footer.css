@@ -1,7 +1,6 @@
 footer {
-  --footer-padding: 1rem;
   min-height: 60vh;
-  padding: var(--footer-padding);
+  padding: var(--tiny-spacing-inline);
   background: linear-gradient(to bottom, transparent 0%, var(--secondary) 75%);
 }
 
@@ -10,7 +9,8 @@ footer {
   height: 100%;
   min-height: inherit;
   gap: 1rem;
-  padding: calc(var(--spacing-inline) - var(--footer-padding));
+  cursor: default;
+  padding: calc(var(--spacing-inline) - var(--tiny-spacing-inline));
 }
 
 .contact .lead {

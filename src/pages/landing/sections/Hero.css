@@ -1,0 +1,81 @@
+.landing .hero {
+  width: 100%;
+  min-height: 60vh;
+  padding: var(--tiny-spacing-inline);
+}
+
+.landing .hero .lead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8rem;
+  padding-inline: calc(var(--spacing-inline) - var(--tiny-spacing-inline));
+  padding-bottom: 2rem;
+}
+.landing .hero .lead > div {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.landing .actions {
+  flex: 3;
+  gap: 2rem;
+}
+
+.landing .title {
+  flex: 5;
+  text-align: justify;
+  color: var(--secondary);
+}
+
+.landing .card.hero-image {
+  min-height: 70vh;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: space-between;
+}
+.landing .card.hero-image::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--n700-rgb), 0.5);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-image .steps-container,
+.hero-image .card-actions {
+  z-index: 1;
+  display: flex;
+  align-items: center;
+}
+.hero-image .card-actions {
+  max-width: 50%;
+  text-align: end;
+}
+.hero-image .card-actions .cta {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 1rem;
+}
+.hero-image .steps-container {
+  gap: 0.5rem;
+  list-style: none;
+}
+.hero-image .step-item {
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  background-color: rgba(var(--card-rgb), 0.5);
+  transition: background 0.4s ease;
+}
+.hero-image .step-item:hover,
+.hero-image .step-item.active {
+  background-color: var(--card);
+}

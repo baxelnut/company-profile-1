@@ -57,6 +57,9 @@
   border: var(--border);
   text-align: start;
   overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 

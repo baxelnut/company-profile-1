@@ -15,9 +15,11 @@
 
   /* Layout */
   --spacing-inline: 20px;
+  --tiny-spacing-inline: 1rem;
   --content-width: calc(100% - 2 * var(--spacing-inline));
 
   /* Font sizes */
+  --big-h: clamp(5rem, 5.5vw, 3.5rem);
   --small-h: clamp(0.9rem, 1vw, 1rem);
   --small-p: clamp(0.8rem, 0.85vw, 0.9rem);
 
@@ -144,10 +146,16 @@ strong {
   font-weight: 200;
 }
 
+.big-h,
 .small-h {
   font-size: var(--small-h);
   font-family: var(--heading);
   font-weight: 600;
+}
+
+.big-h {
+  font-size: var(--big-h);
+  font-weight: 700;
 }
 
 /* Hide scrollbar */

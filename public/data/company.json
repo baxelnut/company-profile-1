@@ -232,7 +232,7 @@
   "products": [
     {
       "id": "prd-01",
-      "name": "Pulse — Team Analytics",
+      "name": "Pulse | Team Analytics",
       "summary": "Lightweight analytics dashboard for product & ops teams.",
       "category": "SaaS",
       "features": [
@@ -282,7 +282,7 @@
   "caseStudies": [
     {
       "id": "case-001",
-      "title": "Kirana Retail — Checkout Optimization",
+      "title": "Kirana Retail | Checkout Optimization",
       "summary": "Improvements to checkout flow, A/B experiments, and performance tuning.",
       "challenge": "High cart abandonment and slow checkout times on mobile.",
       "solution": "Redesigned checkout experience, lazy-load assets, introduced payment microflow.",
@@ -297,7 +297,7 @@
     },
     {
       "id": "case-002",
-      "title": "Finax Bank — Secure Onboarding",
+      "title": "Finax Bank | Secure Onboarding",
       "summary": "Built an onboarding microservice and secure document pipeline.",
       "challenge": "Regulatory requirements and user trust during onboarding.",
       "solution": "Serverless document verification + encrypted storage and audit logs.",
@@ -400,23 +400,73 @@
   "frontend": {
     "pages": [
       {
-        "id": "page-home",
+        "id": "landing",
         "path": "/",
         "title": "Home",
         "sections": [
           {
-            "id": "hero",
+            "id": "hero-landing",
             "component": "Hero",
             "props": {
-              "heading": "Designing digital experiences that scale",
+              "heading": "Designing digital experiences that actually scale",
               "subheading": "Product strategy, design systems, and engineering to ship better products.",
-              "ctaPrimary": {
+              "cta": {
                 "text": "Get a demo",
                 "href": "/contact"
               },
-              "ctaSecondary": {
-                "text": "See case studies",
-                "href": "/case-studies"
+              "steps": [
+                {
+                  "label": "Empathize / Discover",
+                  "desc": "Conduct thorough research to gain a deep, human-centered understanding of the user and their problems.",
+                  "image": {
+                    "webp": "/assets/discover.webp",
+                    "alt": "Empathize / Discover Image"
+                  }
+                },
+                {
+                  "label": "Define",
+                  "desc": "Synthesize research findings into a clear, concise problem statement to align the team on the core challenge.",
+                  "image": {
+                    "webp": "/assets/define.webp",
+                    "alt": "Define Image"
+                  }
+                },
+                {
+                  "label": "Ideate / Develop Ideas",
+                  "desc": "Brainstorm a wide range of potential solutions to the defined problem without immediate judgment.",
+                  "image": {
+                    "webp": "/assets/ideate.webp",
+                    "alt": "Ideate / Develop Ideas Image"
+                  }
+                },
+                {
+                  "label": "Prototype",
+                  "desc": "Create low-cost, tangible representations of potential solutions that can be evaluated and tested.",
+                  "image": {
+                    "webp": "/assets/prototype.webp",
+                    "alt": "Prototype Image"
+                  }
+                },
+                {
+                  "label": "Testing",
+                  "desc": "Gather user feedback on prototypes to validate concepts, uncover issues, and learn what works and what doesn't.",
+                  "image": {
+                    "webp": "/assets/test.webp",
+                    "alt": "Test Image"
+                  }
+                },
+                {
+                  "label": "Iterate and Implement",
+                  "desc": "Continuously refine the design based on testing results and prepare the final, improved solution for launch and ongoing monitoring.",
+                  "image": {
+                    "webp": "/assets/iterate.webp",
+                    "alt": "Iterate and Implement Image"
+                  }
+                }
+              ],
+              "cardCta": {
+                "text": "Learn more about our services",
+                "href": "/about"
               }
             }
           },
@@ -580,7 +630,7 @@
   "seo": {
     "defaultMeta": {
       "titleTemplate": "%s · Oxford Digital Works",
-      "defaultTitle": "Oxford Digital Works — Digital Product Studio",
+      "defaultTitle": "Oxford Digital Works | Digital Product Studio",
       "description": "We build web & mobile products for startups and enterprises. Product strategy, design systems, and engineering.",
       "keywords": [
         "digital agency",
@@ -601,12 +651,11 @@
     },
     "sitemap": [
       "/",
-      "/about",
-      "/services",
-      "/case-studies",
+      "/services/:id",
+      "/stories/:cust",
       "/contact",
-      "/legal/privacy-policy",
-      "/legal/terms"
+      "/privacy-policy",
+      "/terms-conditions"
     ],
     "robots": "User-agent: *\nAllow: /"
   },
@@ -655,7 +704,7 @@
   },
   "pressAndAwards": [
     {
-      "title": "Top 10 Product Agencies — Local Tech Magazine",
+      "title": "Top 10 Product Agencies | Local Tech Magazine",
       "date": "2022-11-12",
       "link": "/press/top-10-product-agencies"
     }
