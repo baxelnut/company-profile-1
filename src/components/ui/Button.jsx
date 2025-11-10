@@ -50,7 +50,7 @@ export default function Button({
 
   const style = {
     "--btn-bg": backgroundColor || "var(--primary)",
-    "--btn-color": textColor,
+    "--btn-color": textColor || "white",
     "--btn-hover-bg": hoverBackgroundColor || "var(--bg)",
     "--btn-hover-color": hoverTextColor || "white",
     "--btn-hover-border": hoverBorderColor || "var(--n600)",

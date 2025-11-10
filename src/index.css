@@ -19,7 +19,7 @@
   --content-width: calc(100% - 2 * var(--spacing-inline));
 
   /* Font sizes */
-  --big-h: clamp(5rem, 5.5vw, 3.5rem);
+  --big-h: clamp(4.25rem, 5.75vw, 3.5rem);
   --small-h: clamp(0.9rem, 1vw, 1rem);
   --small-p: clamp(0.8rem, 0.85vw, 0.9rem);
 

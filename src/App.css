@@ -111,7 +111,7 @@
   }
 
   /* Remove bottom gap if last row is full */
-  .cards-container.grid2:has(:nth-child(2n):last-child),
+  /* .cards-container.grid2:has(:nth-child(2n):last-child), */
   /* .cards-container.grid3:has(:nth-child(3n):last-child), */
   .cards-container.grid4:has(:nth-child(4n):last-child) {
     row-gap: 0;

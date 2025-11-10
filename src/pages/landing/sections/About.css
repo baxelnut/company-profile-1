@@ -1,9 +1,10 @@
 .landing .about {
   width: 100%;
   padding: var(--spacing-inline);
+  padding-bottom: 0rem;
   display: inherit;
   flex-direction: column;
-  gap: 4rem;
+  gap: 8rem;
 }
 
 .about .components-list {

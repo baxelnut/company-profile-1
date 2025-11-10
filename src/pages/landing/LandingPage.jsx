@@ -5,13 +5,13 @@ import { useCompany } from "../../context/CompanyContext";
 // Section map (registry)
 import About from "./sections/About";
 import Hero from "./sections/Hero";
-// Optionally import more when needed
+import Services from "./sections/Services";
 
 // Registry for dynamic section rendering
 const SECTION_COMPONENTS = {
   hero: Hero,
   about: About,
-  // testimonial: Testimonial,
+  services: Services,
   // contact: Contact,
 };
 

@@ -1,9 +1,7 @@
 /* Base button styles */
 .btn,
 .hollow,
-.full {
-  --btn-bg: var(--primary);
-  --btn-color: white;
+.full { 
   --btn-border: transparent;
 
   display: flex;

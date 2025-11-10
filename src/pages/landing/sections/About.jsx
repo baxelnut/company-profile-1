@@ -30,7 +30,7 @@ export default function About({ props, id, title }) {
           <div className="cards-container grid2">
             {aboutProps.specs?.map((spec, i) => (
               <div key={i} className="spec-item">
-                <h1>
+                <h1 className="big-h">
                   <span>{spec.number}</span>
                   <span className="colored-span">{spec.symbol}</span>
                 </h1>

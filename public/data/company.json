@@ -510,7 +510,90 @@
           },
           {
             "id": "services",
-            "title": "Our Services"
+            "title": "Our Services",
+            "props": {
+              "offsetImg": {
+                "src": "assets/team-discussion.webp",
+                "alt": "Creative team collaborating"
+              },
+              "services": [
+                {
+                  "serviceName": "Designing digital experiences that actually scale",
+                  "details": [
+                    {
+                      "label": "UI/UX Design",
+                      "desc": "We craft intuitive, conversion-driven interfaces optimized for both mobile and desktop.",
+                      "icon": "design"
+                    },
+                    {
+                      "label": "Brand Identity",
+                      "desc": "Logo systems, color palettes, and visual languages that make your brand stand out.",
+                      "icon": "palette"
+                    },
+                    {
+                      "label": "Interactive Prototyping",
+                      "desc": "Test product ideas faster using high-fidelity clickable prototypes built in Figma.",
+                      "icon": "layers"
+                    },
+                    {
+                      "label": "Design Systems",
+                      "desc": "Reusable component libraries to ensure visual consistency across every touchpoint.",
+                      "icon": "layout"
+                    }
+                  ]
+                },
+                {
+                  "serviceName": "Building scalable, data-driven web platforms",
+                  "details": [
+                    {
+                      "label": "Full-Stack Development",
+                      "desc": "Modern React + Node.js architecture designed for performance and maintainability.",
+                      "icon": "code"
+                    },
+                    {
+                      "label": "API Integration",
+                      "desc": "Secure REST and GraphQL integrations that connect your app to anything, anywhere.",
+                      "icon": "api"
+                    },
+                    {
+                      "label": "Cloud Deployment",
+                      "desc": "CI/CD pipelines on Firebase, Render, or AWS for seamless scaling and uptime.",
+                      "icon": "cloud"
+                    },
+                    {
+                      "label": "Analytics & Monitoring",
+                      "desc": "Real-time dashboards and tracking tools that turn data into clear business insight.",
+                      "icon": "chart"
+                    }
+                  ]
+                },
+                {
+                  "serviceName": "Strategic partnership for long-term growth",
+                  "details": [
+                    {
+                      "label": "Digital Strategy",
+                      "desc": "We align technology, design, and marketing for measurable business outcomes.",
+                      "icon": "target"
+                    },
+                    {
+                      "label": "Automation",
+                      "desc": "Streamline internal operations with custom workflow automations and dashboards.",
+                      "icon": "settings"
+                    },
+                    {
+                      "label": "Maintenance & Support",
+                      "desc": "Proactive monitoring, security updates, and version control done for you.",
+                      "icon": "shield"
+                    },
+                    {
+                      "label": "Growth Consulting",
+                      "desc": "From MVP validation to product-market fit — we guide your roadmap with data.",
+                      "icon": "rocket"
+                    }
+                  ]
+                }
+              ]
+            }
           },
           {
             "id": "clients",
