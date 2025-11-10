@@ -12,9 +12,9 @@ export const appRoutes = [
     path: "/",
     element: <LandingPage />,
     menu: {
-      Home: "hero-landing",
-      "About us": "about-us",
-      Services: "our-services",
+      Home: "hero",
+      "About us": "about",
+      Services: "services",
       Clients: "clients",
     },
   },

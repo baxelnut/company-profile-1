@@ -1,63 +1,42 @@
 // Style
 import "./About.css";
-// Context
-import { useCompany } from "../../../context/CompanyContext";
 
-export default function About() {
-  const { company, status } = useCompany();
-  if (status !== "ready") return null;
-
-  const landingPage = company?.frontend?.pages?.find((p) => p.id === "landing");
-  const aboutSection = landingPage?.sections?.find((s) => s.id === "about");
-  const aboutProps = aboutSection?.props || {};
-
-  console.log(aboutProps);
+export default function About({ props, id, title }) {
+  const aboutProps = props || {};
 
   return (
-    <section id={aboutSection.id} className="about">
-      <h6 className="title small-h">{aboutSection.title}</h6>
-      <div className="heading">
-        <h4>{aboutProps.heading}</h4>
-        <h4>{aboutProps.subheading}</h4>
+    <section id={id} className="about">
+      <div className="title-container">
+        <h6 className="title small-h">{title}</h6>
+        <div className="heading">
+          <h4>{aboutProps.heading}</h4>
+          <h4 className="faded">{aboutProps.subheading}</h4>
+        </div>
       </div>
 
       <div className="cards-container row components-list">
-        <div className="image-wrapper">
-          <img src={aboutProps.image[0].webp} alt={aboutProps.image[0].alt} />
-        </div>
-        <div className="image-wrapper">
-          <img src={aboutProps.image[1].webp} alt={aboutProps.image[1].alt} />
-        </div>
-        <div className="image-wrapper">
-          <img src={aboutProps.image[2].webp} alt={aboutProps.image[2].alt} />
-        </div>
-
-        <p>{aboutProps.desc[0]}</p>
+        {aboutProps.image?.map((img, i) => (
+          <div key={i} className="image-wrapper">
+            <img src={img.webp} alt={img.alt || `Image ${i + 1}`} />
+          </div>
+        ))}
+        {aboutProps.desc?.[0] && <p>{aboutProps.desc[0]}</p>}
       </div>
 
       <div className="cards-container grid2">
         <div className="spacer"></div>
         <div className="right-specs">
-          <p>{aboutProps.desc[1]}</p>
+          {aboutProps.desc?.[1] && <p>{aboutProps.desc[1]}</p>}
           <div className="cards-container grid2">
-            <div className="spec-item">
-              <h1>
-                <span> {aboutProps.specs[0].number} </span>
-                <span className="colored-span">
-                  {aboutProps.specs[0].symbol}
-                </span>
-              </h1>
-              <p>{aboutProps.specs[0].desc}</p>
-            </div>
-            <div className="spec-item">
-              <h1>
-                <span> {aboutProps.specs[1].number} </span>
-                <span className="colored-span">
-                  {aboutProps.specs[1].symbol}
-                </span>
-              </h1>
-              <p>{aboutProps.specs[1].desc}</p>
-            </div>
+            {aboutProps.specs?.map((spec, i) => (
+              <div key={i} className="spec-item">
+                <h1>
+                  <span>{spec.number}</span>
+                  <span className="colored-span">{spec.symbol}</span>
+                </h1>
+                <p>{spec.desc}</p>
+              </div>
+            ))}
           </div>
         </div>
       </div>

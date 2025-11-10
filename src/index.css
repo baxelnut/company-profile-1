@@ -53,11 +53,11 @@
   /* Background & text */
   --bg: #eeeeee;
   --text: #191c21;
-  --on-primary: var(--n200);
+  --on-primary: var(--bg);
   --on-secondary: var(--n200);
   --bg-rgb: 238, 238, 238;
   --text-rgb: 25, 28, 33;
-  --on-primary-rgb: var(--n200-rgb);
+  --on-primary-rgb: var(--bg-rgb);
   --on-secondary-rgb: var(--n200-rgb);
 
   /* Utils */

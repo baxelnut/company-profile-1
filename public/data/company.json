@@ -509,19 +509,36 @@
             }
           },
           {
-            "id": "caseStudies",
-            "component": "FeaturedCaseStudies",
-            "props": {
-              "heading": "Case studies",
-              "limit": 3
-            }
+            "id": "services",
+            "title": "Our Services"
           },
           {
-            "id": "logos",
-            "component": "ClientLogoStrip",
+            "id": "clients",
+            "title": "Customer Stories"
+          },
+          {
+            "id": "cta-section",
+            "title": "Ready To Start Your Project?",
+            "subtitle": "Let's discuss how we can help you achieve your manufacturing goals",
             "props": {
-              "heading": "Trusted by",
-              "itemsSource": "clients"
+              "cta": {
+                "text": "Get in touch",
+                "path": "/contact"
+              },
+              "extras": {
+                "image": [
+                  {
+                    "webp": "/assets/person1.webp",
+                    "alt": "Get in touch: person 1"
+                  },
+                  {
+                    "webp": "/assets/person2.webp",
+                    "alt": "Get in touch: person 2"
+                  }
+                ],
+                "text": "We'll help meet your manufacturing goals",
+                "rating": 5.0
+              }
             }
           }
         ]
