@@ -2,6 +2,7 @@ footer {
   --footer-padding: 1rem;
   min-height: 60vh;
   padding: var(--footer-padding);
+  background: linear-gradient(to bottom, transparent 0%, var(--secondary) 75%);
 }
 
 .card.contact {
