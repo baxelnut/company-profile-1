@@ -14,9 +14,7 @@ export default function Hero() {
   const { company, status } = useCompany();
 
   const landingPage = company?.frontend?.pages?.find((p) => p.id === "landing");
-  const heroSection = landingPage?.sections?.find(
-    (s) => s.id === "hero-landing"
-  );
+  const heroSection = landingPage?.sections?.find((s) => s.id === "hero");
   const heroProps = heroSection?.props || {};
   const activeStep = heroProps.steps?.[activeIndex];
 

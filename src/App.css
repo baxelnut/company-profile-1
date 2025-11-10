@@ -91,11 +91,7 @@
   flex-direction: column;
 }
 
-.cards-container.title {
-  justify-content: space-between;
-}
-
-.cards-container.flex1 > div {
+.cards-container.flex > div {
   flex: 1;
 }
 

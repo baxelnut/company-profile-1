@@ -1,0 +1,56 @@
+.landing .about {
+  width: 100%;
+  padding: var(--spacing-inline);
+  display: inherit;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.about .components-list {
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.about .image-wrapper {
+  width: fit-content;
+  max-width: 20%;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  display: inline-block;
+  position: relative;
+}
+.about .image-wrapper::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(var(--n700-rgb), 0.35);
+  border-radius: inherit;
+  aspect-ratio: inherit;
+  pointer-events: none;
+}
+
+.about .image-wrapper img {
+  width: 100%;
+  border-radius: inherit;
+  aspect-ratio: inherit;
+}
+.about .image-wrapper:nth-child(even) {
+  border-radius: 5rem 1rem;
+}
+.about .components-list p {
+  flex: 1;
+  width: 100%;
+  padding-inline: 4rem;
+}
+
+.about .title {
+  width: fit-content;
+  background-color: var(--primary);
+  padding: 0.5rem 1rem;
+  border-radius: 360px;
+  color: var(--on-primary);
+}
+
+.about .colored-span {
+  color: var(--primary);
+}

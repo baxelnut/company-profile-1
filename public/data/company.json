@@ -405,8 +405,8 @@
         "title": "Home",
         "sections": [
           {
-            "id": "hero-landing",
-            "component": "Hero",
+            "id": "hero",
+            "title": "Hero",
             "props": {
               "heading": "Designing digital experiences that actually scale",
               "subheading": "Product strategy, design systems, and engineering to ship better products.",
@@ -471,11 +471,41 @@
             }
           },
           {
-            "id": "services",
-            "component": "ServicesGrid",
+            "id": "about",
+            "title": "About Us",
             "props": {
-              "heading": "Core services",
-              "itemsSource": "services"
+              "heading": "Designing digital experiences that actually scale",
+              "subheading": "Product strategy, design systems, and engineering to ship better products.",
+              "desc": [
+                "Product strategy, design systems, and engineering to ship better products.",
+                "Product strategy, design systems, and engineering to ship better products."
+              ],
+              "image": [
+                {
+                  "webp": "/assets/person1.webp",
+                  "alt": "About Us: Person 1"
+                },
+                {
+                  "webp": "/assets/person2.webp",
+                  "alt": "About Us: Person 2"
+                },
+                {
+                  "webp": "/assets/person3.webp",
+                  "alt": "About Us: Person 3"
+                }
+              ],
+              "specs": [
+                {
+                  "number": "10M",
+                  "symbol": "+",
+                  "desc": "Parts manufactured with zero"
+                },
+                {
+                  "number": "98",
+                  "symbol": "%",
+                  "desc": "On time delivey rate acroos"
+                }
+              ]
             }
           },
           {
