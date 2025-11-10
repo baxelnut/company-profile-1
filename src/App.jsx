@@ -1,24 +1,28 @@
-import { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // Style
 import "./App.css";
-// Routes
-
+// Pages
+import { appRoutes } from "./routes/AppRoutes";
+import PageNotFound from "./pages/PageNotFound";
+// Components
+import Layout from "./components/layouts/Layout";
+import ScrollToTop from "./components/utils/ScrollToTop";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
-    <>
-      <h1>Company Profile 1</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-    </>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        {appRoutes.map(({ path, element, menu }) => (
+          <Route
+            key={path}
+            path={path}
+            element={<Layout menu={menu}>{element}</Layout>}
+          />
+        ))}
+        <Route path="*" element={<PageNotFound />} /> {/* 404 fallback */}
+      </Routes>
+    </Router>
   );
 }
 

@@ -27,12 +27,12 @@
   --secondary: #3a4750;
   --danger: #da4b4b;
   --safe: #7ed857;
-  --card: #e7eef1;
+  --card: #ffffff;
   --primary-rgb: 0, 173, 181;
   --secondary-rgb: 58, 71, 80;
   --danger-rgb: 218, 75, 75;
   --safe-rgb: 126, 216, 87;
-  --card-rgb: 196, 215, 224;
+  --card-rgb: 255, 255, 255;
 
   /* Neutral scale (dark → light) */
   --n700: #1c1f23;
@@ -55,6 +55,10 @@
   --bg-rgb: 238, 238, 238;
   --text-rgb: 25, 28, 33;
   --on-secondary-rgb: var(--n200-rgb);
+
+  /* Utils */
+  --border-color: rgba(var(--n500-rgb), 0.25);
+  --border: 1px solid var(--border-color);
 }
 
 /* ========= TYPOGRAPHY ========= */
