@@ -15,7 +15,7 @@ export const appRoutes = [
       Home: "hero",
       "About us": "about",
       Services: "services",
-      Clients: "clients",
+      Clients: "stories",
     },
   },
   { path: "/services/:id", element: <ServicesDetailPage /> },
