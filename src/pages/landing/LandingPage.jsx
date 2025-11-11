@@ -4,15 +4,18 @@ import "./LandingPage.css";
 import { useCompany } from "../../context/CompanyContext";
 // Section map (registry)
 import About from "./sections/About";
+import CTA from "./sections/CTA";
 import Hero from "./sections/Hero";
 import Services from "./sections/Services";
+import Stories from "./sections/Stories";
 
 // Registry for dynamic section rendering
 const SECTION_COMPONENTS = {
   hero: Hero,
   about: About,
   services: Services,
-  // contact: Contact,
+  stories: Stories,
+  cta: CTA,
 };
 
 export default function LandingPage() {

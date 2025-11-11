@@ -12,53 +12,27 @@
   gap: 1.5rem;
 }
 
-.about .image-wrapper {
-  width: fit-content;
+.about .imaged-card {
   max-width: 20%;
+  height: 100%;
   border-radius: 50%;
   aspect-ratio: 1;
   display: inline-block;
   position: relative;
 }
-.about .image-wrapper::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(var(--n700-rgb), 0.35);
-  border-radius: inherit;
-  aspect-ratio: inherit;
-  pointer-events: none;
-}
-
-.about .image-wrapper img {
-  width: 100%;
+.about .imaged-card img {
+  width: inherit;
+  height: inherit;
   border-radius: inherit;
   aspect-ratio: inherit;
 }
-.about .image-wrapper:nth-child(even) {
+.about .imaged-card:nth-child(even) {
   border-radius: 5rem 1rem;
 }
 .about .components-list p {
   flex: 1;
   width: 100%;
   padding-inline: 4rem;
-}
-
-.about .title-container {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-.about .faded {
-  color: var(--n400);
-}
-
-.about .title {
-  width: fit-content;
-  background-color: var(--secondary);
-  padding: 0.25rem 0.75rem;
-  border-radius: 360px;
-  color: var(--on-secondary);
 }
 
 .about .colored-span {

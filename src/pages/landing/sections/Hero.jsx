@@ -23,14 +23,20 @@ export default function Hero({ props, id }) {
       <div className="lead">
         <div className="actions">
           <p className="small-h">{heroProps.subheading}</p>
-          <Button text={heroProps.cta.text} href={heroProps.cta.href} rounded />
+          <Button
+            text={heroProps.cta.text}
+            href={heroProps.cta.href}
+            arrowRight
+            iconAfter
+            rounded
+          />
         </div>
         <h1 className="title big-h">{heroProps.heading}</h1>
       </div>
 
       <div
-        className="card hero-image"
-        style={{ backgroundImage: `url(${activeStep?.image.webp})` }}
+        className="card imaged-card"
+        style={{ backgroundImage: `url(${activeStep?.image.url})` }}
       >
         <div className="steps-container">
           {heroProps.steps?.map((step, i) => (
@@ -40,7 +46,9 @@ export default function Hero({ props, id }) {
               onClick={() => setActiveIndex(i)}
             >
               <h6 className="step-label small-h">
-                {`${i + 1} ${i === activeIndex ? step.label : ""}`}
+                {`${i === activeIndex ? "" : i + 1} ${
+                  i === activeIndex ? step.label : ""
+                }`}
               </h6>
             </div>
           ))}
@@ -48,7 +56,7 @@ export default function Hero({ props, id }) {
 
         <div className="card card-actions">
           <h5>{activeDesc}</h5>
-          <div className="cta">
+          <div className="hero-cta">
             <h6 className="small-h">{heroProps.cardCta.text}</h6>
             <Button iconPath={SVG_PATHS.chevronRight} type="submit" />
           </div>

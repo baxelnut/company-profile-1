@@ -16,8 +16,8 @@ export default function About({ props, id, title }) {
 
       <div className="cards-container row components-list">
         {aboutProps.image?.map((img, i) => (
-          <div key={i} className="image-wrapper">
-            <img src={img.webp} alt={img.alt || `Image ${i + 1}`} />
+          <div key={i} className="card imaged-card">
+            <img src={img.url} alt={img.alt || `Image ${i + 1}`} />
           </div>
         ))}
         {aboutProps.desc?.[0] && <p>{aboutProps.desc[0]}</p>}

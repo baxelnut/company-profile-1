@@ -30,7 +30,7 @@
   color: var(--secondary);
 }
 
-.landing .card.hero-image {
+.landing .hero .card.imaged-card {
   min-height: 70vh;
   position: relative;
   overflow: hidden;
@@ -38,44 +38,37 @@
   flex-direction: row;
   align-items: end;
   justify-content: space-between;
-}
-.landing .card.hero-image::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: rgba(var(--n700-rgb), 0.5);
-  pointer-events: none;
-  z-index: 0;
+  padding: 2rem !important;
 }
 
-.hero-image .steps-container,
-.hero-image .card-actions {
+.hero .imaged-card .steps-container,
+.hero .imaged-card .card-actions {
   z-index: 1;
   display: flex;
   align-items: center;
 }
-.hero-image .card-actions {
+.hero .imaged-card .card-actions {
   max-width: 50%;
   text-align: end;
 }
-.hero-image .card-actions .cta {
+.hero-cta {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: end;
   gap: 1rem;
 }
-.hero-image .steps-container {
+.hero .imaged-card .steps-container {
   gap: 0.5rem;
   list-style: none;
 }
-.hero-image .step-item {
+.hero .imaged-card .step-item {
   padding: 0.5rem 1.5rem;
   border-radius: 0.75rem;
   background-color: rgba(var(--card-rgb), 0.5);
   transition: background 0.4s ease;
 }
-.hero-image .step-item:hover,
-.hero-image .step-item.active {
+.hero .imaged-card .step-item:hover,
+.hero .imaged-card .step-item.active {
   background-color: var(--card);
 }

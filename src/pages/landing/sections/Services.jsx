@@ -27,8 +27,11 @@ export default function Services({ props, id, title }) {
 
   return (
     <section id={id} className="services">
-      <div className="big-pic-container">
-        <img src="assets/person1.webp" alt="" />
+      <div className="card big-pic-container imaged-card">
+        <img
+          src={serviceProps.offsetImg.url}
+          alt={serviceProps.offsetImg.alt}
+        />
       </div>
 
       <div className="card service-container">
@@ -47,7 +50,9 @@ export default function Services({ props, id, title }) {
             <Button
               iconPath={SVG_PATHS.chevronRight}
               onClick={handleNext}
-              hoverBackgroundColor="var(--text)"
+              backgroundColor="var(--bg)"
+              textColor="var(--text)"
+              hoverBackgroundColor="var(--primary)"
             />
           </div>
         </div>
