@@ -6,11 +6,12 @@
 
 .landing .hero .lead {
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
-  gap: 8rem;
+  gap: 1rem;
   padding-inline: calc(var(--spacing-inline) - var(--tiny-spacing-inline));
-  padding-bottom: 2rem;
+  padding-block: var(--spacing-inline);
 }
 .landing .hero .lead > div {
   display: flex;
@@ -21,7 +22,7 @@
 
 .landing .actions {
   flex: 3;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .landing .hero .title {
@@ -67,8 +68,20 @@
   border-radius: 0.75rem;
   background-color: rgba(var(--card-rgb), 0.5);
   transition: background 0.4s ease;
+  cursor: pointer;
 }
 .hero .imaged-card .step-item:hover,
 .hero .imaged-card .step-item.active {
   background-color: var(--card);
+}
+
+@media (min-width: 768px) {
+  .landing .hero .lead {
+    flex-direction: row;
+    gap: 8rem;
+  }
+
+  .landing .actions {
+    gap: 2rem;
+  }
 }

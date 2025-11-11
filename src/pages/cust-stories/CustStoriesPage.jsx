@@ -25,7 +25,6 @@ export default function CustStoriesPage() {
       </div>
     );
 
-  // ✅ Correct JSON path
   const homePage = company.frontend?.pages?.find((p) => p.id === "landing");
   const storiesSection = homePage?.sections?.find((s) => s.id === "stories");
   const client = storiesSection?.props?.clients?.find((c) => c.id === id);

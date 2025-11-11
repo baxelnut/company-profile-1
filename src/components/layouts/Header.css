@@ -7,13 +7,12 @@ header .logo {
 }
 
 header {
-  z-index: 999;
   position: sticky;
   top: 0;
+  z-index: 999;
   padding: 0.75rem var(--spacing-inline);
-  background-color: transparent;
-  transition: background-color 0.6s ease, box-shadow 0.6s ease,
-    transform 0.4s ease;
+  background: transparent;
+  transition: all 0.4s ease;
 }
 header.hidden {
   transform: translateY(-100%);
@@ -30,4 +29,84 @@ header .logo img {
   height: 100%;
   max-height: 40px;
   aspect-ratio: 1;
+}
+
+/* Desktop Menu */
+.menu-desktop {
+  display: none;
+}
+
+/* Burger Icon */
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+.bar {
+  width: 24px;
+  height: 2px;
+  background: var(--text);
+  transition: 0.3s;
+}
+.burger.scrolled .bar {
+  background: var(--on-secondary);
+}
+
+/* Mobile Overlay */
+.menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  max-width: 260px;
+  height: 100vh;
+  background: var(--secondary);
+  color: var(--on-secondary);
+  transform: translateX(100%);
+  transition: transform 0.4s ease;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+}
+.menu-overlay.open {
+  transform: translateX(0);
+}
+.menu-overlay .close {
+  align-self: flex-end;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  margin-bottom: 2rem;
+}
+
+/* Dim background when open */
+.overlay-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Desktop view */
+@media (min-width: 768px) {
+  .burger,
+  .overlay-bg,
+  .menu-overlay {
+    display: none;
+  }
+
+  .menu-desktop {
+    display: flex;
+  }
 }

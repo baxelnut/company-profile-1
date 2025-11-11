@@ -22,10 +22,10 @@ export default function Hero({ props, id }) {
     <section id={id} className="hero">
       <div className="lead">
         <div className="actions">
-          <p className="small-h">{heroProps.subheading}</p>
+          <h6>{heroProps.subheading}</h6>
           <Button
             text={heroProps.cta.text}
-            href={heroProps.cta.href}
+            to={heroProps.cta.href}
             arrowRight
             iconAfter
             rounded
@@ -55,7 +55,7 @@ export default function Hero({ props, id }) {
         </div>
 
         <div className="card card-actions">
-          <h5>{activeDesc}</h5>
+          <h4>{activeDesc}</h4>
           <div className="hero-cta">
             <h6 className="small-h">{heroProps.cardCta.text}</h6>
             <Button iconPath={SVG_PATHS.chevronRight} type="submit" />

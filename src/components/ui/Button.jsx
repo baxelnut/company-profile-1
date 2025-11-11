@@ -17,7 +17,7 @@ export default function Button({
   rounded = false,
   short = false,
   iconPath = null,
-  iconSize = 16,
+  iconSize = 22,
   iconAfter = false,
   viewBox = "0 0 16 16",
   onClick = null,

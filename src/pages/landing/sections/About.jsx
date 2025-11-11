@@ -9,8 +9,8 @@ export default function About({ props, id, title }) {
       <div className="title-container">
         <h6 className="title small-h">{title}</h6>
         <div className="heading">
-          <h4>{aboutProps.heading}</h4>
-          <h4 className="faded">{aboutProps.subheading}</h4>
+          <h3>{aboutProps.heading}</h3>
+          <h3 className="faded">{aboutProps.subheading}</h3>
         </div>
       </div>
 

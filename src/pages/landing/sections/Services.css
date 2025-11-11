@@ -10,7 +10,6 @@
   flex-direction: row;
   align-items: end;
   background-color: var(--text);
-  cursor: default;
 }
 .landing .card.service-container > div {
   flex: 1;
@@ -52,7 +51,6 @@
   border-radius: 2rem;
   padding: 0;
   border: none;
-  cursor: default;
 }
 
 .big-pic-container img {

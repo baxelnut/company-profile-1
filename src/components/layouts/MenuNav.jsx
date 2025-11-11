@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 // Style
 import "./MenuNav.css";
 
-export default function MenuNav({ menu }) {
+export default function MenuNav({ menu, isMenuOpen = false, setMenuOpen }) {
   if (!menu) return null;
 
   const [active, setActive] = useState(null);
@@ -24,7 +24,7 @@ export default function MenuNav({ menu }) {
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); // run once on mount
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, [menu]);
 
@@ -32,11 +32,12 @@ export default function MenuNav({ menu }) {
     const section = document.getElementById(id);
     if (section) {
       section.scrollIntoView({ behavior: "smooth", block: "start" });
+      setMenuOpen?.(false);
     }
   };
 
   return (
-    <nav className="menu">
+    <nav className={`menu ${isMenuOpen ? "open" : ""}`}>
       {Object.entries(menu).map(([label, target], index, arr) => (
         <div key={label} className="menu-wrapper">
           <div

@@ -30,7 +30,7 @@ export default function Footer({ menu }) {
         {/* Lead Section */}
         <div className="lead">
           <div className="tagline-container">
-            <h1>{meta?.tagline || "Your trusted digital partner"}</h1>
+            <h2>{meta?.tagline || "Your trusted digital partner"}</h2>
             <MenuNav menu={menu} />
           </div>
 
@@ -47,7 +47,7 @@ export default function Footer({ menu }) {
         </div>
 
         {/* Socials + Legal */}
-        <div className="socials-container">
+        <div className="cards-container row socials-container">
           {Object.keys(socials).length > 0 && (
             <div className="social-media-links">
               {Object.entries(socials).map(([name, url]) =>
@@ -56,8 +56,8 @@ export default function Footer({ menu }) {
                     key={name}
                     href={url}
                     iconPath={SVG_PATHS[name]}
+                    iconSize={18}
                     hollow
-                    aria-label={name}
                   />
                 ) : null
               )}

@@ -41,8 +41,8 @@ export default function CTA({ id, props, title }) {
           />
         </div>
         <div className="rating">
-          <Icon path={SVG_PATHS.starFill} fill="gold" size={18} />
-          <h6 className="small-h">{ctaProps.extras.rating}</h6>
+          <Icon path={SVG_PATHS.starFill} fill="var(--secondary)" size={24} />
+          <h5>{ctaProps.extras.rating}</h5>
         </div>
       </div>
     </section>

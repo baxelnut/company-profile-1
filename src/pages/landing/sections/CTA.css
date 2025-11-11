@@ -1,6 +1,7 @@
 .landing .cta {
   width: 100%;
   display: flex;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
@@ -12,8 +13,8 @@
 .cta .text-container,
 .cta .decoration-container {
   flex: 1;
-  width: 40%;
-  min-height: 60vh;
+  width: 80%;
+  min-height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,6 +23,7 @@
 }
 
 .cta .decoration-container {
+  display: none;
   justify-content: space-between;
   padding: 2rem;
 }
@@ -30,9 +32,25 @@
   height: inherit;
   border-radius: inherit;
 }
-.cta .decoration-container .rating {
+.cta .rating {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+}
+
+@media (min-width: 768px) {
+  .landing .cta {
+    flex-direction: row;
+  }
+
+  .cta .text-container,
+  .cta .decoration-container {
+    width: 40%;
+    min-height: 60vh;
+  }
+
+  .cta .decoration-container {
+    display: flex;
+  }
 }

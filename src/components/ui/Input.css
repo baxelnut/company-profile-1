@@ -84,3 +84,9 @@
   cursor: pointer;
   padding: 0;
 }
+
+.custom-input,
+.custom-input::placeholder {
+  font-size: var(--small-h);
+  font-weight: 500;
+}
