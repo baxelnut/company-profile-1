@@ -24,9 +24,10 @@
       "alt": "Oxford Digital Works logo"
     },
     "coverImage": "/assets/cover-office.jpg",
-    "shortDescription": "Oxford Digital Works is a full-service digital product studio building web and mobile experiences for growth-stage startups and enterprise teams.",
-    "longDescription": "Oxford Digital Works crafts web and mobile products with a focus on high-quality design, engineering discipline, and measurable business outcomes. We pair product strategy with fast engineering sprints to deliver customer-facing apps, internal tools, and design systems."
+    "shortDescription": "A full-service digital product studio helping startups and enterprise teams craft scalable web and mobile experiences.",
+    "longDescription": "Oxford Digital Works combines strategic design and engineering excellence to build high-performing digital products. Our teams deliver customer-facing apps, internal platforms, and design systems that drive measurable business outcomes."
   },
+
   "contact": {
     "headquarters": {
       "addressLine1": "Jl. Merdeka No. 88",
@@ -39,35 +40,38 @@
     },
     "offices": [
       {
+        "id": "hq-jakarta",
         "name": "Jakarta HQ",
         "address": "Jl. Merdeka No. 88, Menteng, Central Jakarta, 10310",
         "phone": "+62-21-555-0101",
         "email": "hello@oxford-digital.example",
-        "hours": "Mon-Fri 09:00-18:00"
+        "hours": "Mon–Fri, 09:00–18:00"
       },
       {
+        "id": "remote",
         "name": "Remote / Distributed",
-        "address": "Remote-first (APAC/EMEA)",
-        "phone": null,
+        "address": "Remote-first (APAC / EMEA)",
         "email": "remotesupport@oxford-digital.example",
-        "hours": "Mon-Fri 09:00-18:00 GMT+7 (flexible)"
+        "hours": "Mon–Fri, flexible GMT+7"
       }
     ],
-    "sales": {
-      "email": "sales@oxford-digital.example",
-      "phone": "+62-21-555-0199",
-      "leadForm": {
-        "enabled": true,
-        "method": "mailto",
-        "mailto": "sales@oxford-digital.example",
-        "notes": "For demo requests, preferred method is the contact form which sends an email."
+    "departments": {
+      "sales": {
+        "email": "sales@oxford-digital.example",
+        "phone": "+62-21-555-0199",
+        "leadForm": {
+          "enabled": true,
+          "method": "mailto",
+          "mailto": "sales@oxford-digital.example",
+          "notes": "For demo requests, contact via form for fastest response."
+        }
+      },
+      "press": {
+        "email": "press@oxford-digital.example"
+      },
+      "careers": {
+        "email": "careers@oxford-digital.example"
       }
-    },
-    "press": {
-      "email": "press@oxford-digital.example"
-    },
-    "careers": {
-      "email": "careers@oxford-digital.example"
     },
     "social": {
       "website": "https://oxford-digital.example",
@@ -78,6 +82,7 @@
       "github": "https://github.com/oxford-digital-works"
     }
   },
+
   "legal": {
     "registration": {
       "companyNumber": "NPWP-1234567890",
@@ -89,7 +94,7 @@
     "privacyPolicy": {
       "url": "/privacy-policy",
       "lastUpdated": "2025-01-18",
-      "summary": "Collects minimal personal data for contact and recruitment; stores analytics with anonymization; does not sell data."
+      "summary": "We collect minimal data necessary for communication, analytics, and recruitment. No data resale."
     },
     "termsOfService": {
       "url": "/terms-conditions",
@@ -97,14 +102,14 @@
     },
     "certifications": [
       {
-        "name": "ISO/IEC 27001 (placeholder)",
-        "issuer": "International Standards Org",
+        "name": "ISO/IEC 27001",
+        "issuer": "International Standards Organization",
         "id": "ISO27001-ODW-2024",
         "issuedDate": "2024-07-01",
         "expires": "2027-07-01"
       },
       {
-        "name": "SOC 2 Type II (placeholder)",
+        "name": "SOC 2 Type II",
         "issuer": "Independent Auditor",
         "id": "SOC2-ODW-2025",
         "issuedDate": "2025-02-10",
@@ -112,35 +117,37 @@
       }
     ]
   },
+
   "leadership": [
     {
       "id": "lead-01",
       "name": "Armando Putra",
       "title": "Co-Founder & CEO",
       "photo": "/assets/team/armando.jpg",
-      "bio": "Product strategist turned founder. Armando leads company direction, partnerships, and enterprise engagements.",
+      "bio": "Product strategist and digital consultant leading vision, partnerships, and growth initiatives.",
       "email": "armando.putra@oxford-digital.example",
-      "linkedin": "https://linkedin.com/in/armando-putra-placeholder"
+      "linkedin": "https://linkedin.com/in/armando-putra"
     },
     {
       "id": "lead-02",
       "name": "Riko Susanto",
       "title": "CTO",
       "photo": "/assets/team/riko.jpg",
-      "bio": "Engineering leader with 12+ years building scalable Node.js services and front-end architectures.",
+      "bio": "Engineering leader with 12+ years of experience in scalable systems and modern front-end architecture.",
       "email": "riko.susanto@oxford-digital.example",
-      "linkedin": "https://linkedin.com/in/riko-susanto-placeholder"
+      "linkedin": "https://linkedin.com/in/riko-susanto"
     },
     {
       "id": "lead-03",
       "name": "Dina Hartono",
       "title": "Head of Design",
       "photo": "/assets/team/dina.jpg",
-      "bio": "Design systems advocate, content strategist, and motion design lead.",
+      "bio": "Design systems expert and content strategist advocating for purposeful, inclusive design.",
       "email": "dina.hartono@oxford-digital.example",
-      "linkedin": "https://linkedin.com/in/dina-hartono-placeholder"
+      "linkedin": "https://linkedin.com/in/dina-hartono"
     }
   ],
+
   "organization": {
     "departments": [
       "Engineering",
@@ -152,251 +159,89 @@
       "Customer Success",
       "Data Science"
     ],
-    "orgChartSvg": "/assets/org-chart.svg"
+    "orgChart": "/assets/org-chart.svg"
   },
+
   "services": [
     {
       "id": "svc-01",
       "title": "Product Strategy & Discovery",
-      "summary": "User research, product-market fit, discovery sprints, roadmap planning.",
-      "details": "2-week discovery, stakeholder workshops, prototyping, and success metrics definition.",
-      "deliverables": [
-        "Roadmap",
-        "Proto (Figma)",
-        "PRD (Product Requirements Document)",
-        "User Personas"
-      ],
-      "engagementModel": "Fixed Price or Time & Materials",
+      "summary": "Define, validate, and plan the right product through user research and rapid discovery.",
+      "deliverables": ["Product roadmap", "Prototype", "User personas", "PRD"],
+      "engagementModel": ["Fixed Price", "Time & Materials"],
       "startingPriceUSD": 8000
     },
     {
       "id": "svc-02",
       "title": "UX/UI Design & Design Systems",
-      "summary": "End-to-end UX and UI focused on accessibility, performance, and design systems.",
+      "summary": "Craft user experiences and scalable design systems for consistent cross-platform delivery.",
       "deliverables": [
         "Wireframes",
-        "High-fidelity UI",
-        "Component library (Figma + React)",
-        "Accessibility audit"
+        "UI Kit",
+        "Design library",
+        "Accessibility report"
       ],
-      "engagementModel": "Retainer or Project",
       "startingPriceUSD": 6000
     },
     {
       "id": "svc-03",
       "title": "Web & Mobile Engineering",
-      "summary": "Frontend (React/Vite/Next) and backend architecture for scalable web apps and PWAs.",
-      "details": "Best practices: CI/CD, testing, monitoring, and infra-as-code.",
+      "summary": "Modern front-end and backend solutions using React, Node.js, and scalable cloud infra.",
       "techStack": [
-        "React (Vite/Next)",
+        "React",
+        "Vite",
+        "Next.js",
+        "Node.js",
         "TypeScript",
-        "Node.js / Express",
-        "PostgreSQL / Supabase",
-        "Firebase (Auth/Hosting)",
-        "Docker",
-        "Redis"
+        "Supabase",
+        "Firebase",
+        "Docker"
       ],
-      "engagementModel": "Time & Materials",
       "startingPriceUSD": 12000
     },
     {
       "id": "svc-04",
       "title": "Cloud & Data Engineering",
-      "summary": "Cloud migration, analytics pipeline, and data visualization.",
+      "summary": "Analytics pipelines, dashboards, and data warehousing for smarter business decisions.",
       "deliverables": [
         "ETL pipelines",
-        "Data warehouse schema",
-        "Dashboards (Looker/Metabase)"
+        "Warehouse schema",
+        "Looker/Metabase dashboards"
       ],
-      "engagementModel": "Time & Materials",
       "startingPriceUSD": 10000
     },
     {
       "id": "svc-05",
       "title": "Maintenance & Support",
-      "summary": "SLA-backed support, security patching, and regular audits.",
+      "summary": "Ongoing monitoring, updates, and security patching to keep your platform reliable.",
       "plans": [
-        {
-          "name": "Standard",
-          "monthlyUSD": 500,
-          "responseTimeHours": 48
-        },
-        {
-          "name": "Priority",
-          "monthlyUSD": 1500,
-          "responseTimeHours": 4
-        }
+        { "name": "Standard", "monthlyUSD": 500, "responseTimeHours": 48 },
+        { "name": "Priority", "monthlyUSD": 1500, "responseTimeHours": 4 }
       ]
     }
   ],
+
   "products": [
     {
       "id": "prd-01",
-      "name": "Pulse | Team Analytics",
-      "summary": "Lightweight analytics dashboard for product & ops teams.",
+      "name": "Pulse",
+      "tagline": "Team Analytics for Modern Product Teams",
+      "summary": "A lightweight dashboard for tracking engagement and product metrics in real time.",
       "category": "SaaS",
       "features": [
         "User funnels",
-        "Weekly active users",
         "Cohort analysis",
-        "Exportable CSV"
+        "CSV export",
+        "Weekly active tracking"
       ],
       "pricing": {
         "freeTier": true,
-        "paid": {
-          "starterUSD": 29,
-          "businessUSD": 199,
-          "enterpriseCustom": true
-        }
+        "plans": { "starter": 29, "business": 199, "enterprise": "Custom" }
       },
-      "links": {
-        "productPage": "/products/pulse",
-        "demo": "/products/pulse/demo"
-      }
+      "links": { "page": "/products/pulse", "demo": "/products/pulse/demo" }
     }
   ],
-  "clients": [
-    {
-      "id": "client-01",
-      "name": "Kirana Retail",
-      "industry": "Retail",
-      "logo": "/assets/clients/kirana.png",
-      "testimonial": {
-        "quote": "Oxford Digital helped us reduce checkout abandonment by 28% in 3 months.",
-        "author": "Sabrina H.",
-        "title": "Head of Product"
-      }
-    },
-    {
-      "id": "client-02",
-      "name": "Finax Bank (Pilot)",
-      "industry": "Fintech",
-      "logo": "/assets/clients/finax.png",
-      "testimonial": {
-        "quote": "Delivered secure, auditable features and a modern UX under a tight timeline.",
-        "author": "Arief T.",
-        "title": "VP, Digital Channels"
-      }
-    }
-  ],
-  "caseStudies": [
-    {
-      "id": "case-001",
-      "title": "Kirana Retail | Checkout Optimization",
-      "summary": "Improvements to checkout flow, A/B experiments, and performance tuning.",
-      "challenge": "High cart abandonment and slow checkout times on mobile.",
-      "solution": "Redesigned checkout experience, lazy-load assets, introduced payment microflow.",
-      "results": {
-        "reducedAbandonmentPct": 28,
-        "reducedLoadTimeMs": 620,
-        "conversionUpliftPct": 14
-      },
-      "durationWeeks": 12,
-      "teamSize": 6,
-      "link": "/case-studies/kirana-checkout"
-    },
-    {
-      "id": "case-002",
-      "title": "Finax Bank | Secure Onboarding",
-      "summary": "Built an onboarding microservice and secure document pipeline.",
-      "challenge": "Regulatory requirements and user trust during onboarding.",
-      "solution": "Serverless document verification + encrypted storage and audit logs.",
-      "results": {
-        "onboardingDropRatePct": 9,
-        "timeToKYCdays": 0.8
-      },
-      "durationWeeks": 16,
-      "teamSize": 8,
-      "link": "/case-studies/finax-onboarding"
-    }
-  ],
-  "partners": [
-    {
-      "name": "Supabase",
-      "type": "Technology Partner",
-      "logo": "/assets/partners/supabase.png"
-    },
-    {
-      "name": "Vercel",
-      "type": "Hosting Partner",
-      "logo": "/assets/partners/vercel.png"
-    }
-  ],
-  "brand": {
-    "colors": {
-      "primary": "#0B4DB1",
-      "primaryVariant": "#093A88",
-      "accent": "#FF6B35",
-      "muted": "#6B7280",
-      "background": "#FFFFFF",
-      "surface": "#F8FAFC",
-      "success": "#16a34a",
-      "danger": "#dc2626"
-    },
-    "typography": {
-      "primary": "Inter, system-ui, -apple-system, 'Segoe UI'",
-      "heading": "Space Grotesk, Inter",
-      "baseSize": 16,
-      "scale": [12, 14, 16, 20, 24, 32, 40]
-    },
-    "logoUsage": {
-      "clearspace": "Use 24px clearspace on all sides",
-      "minWidthPx": 120,
-      "donts": [
-        "Do not distort",
-        "Do not rotate",
-        "Do not change color outside palette"
-      ]
-    },
-    "iconography": {
-      "library": "lucide-react",
-      "styleGuidelines": "Line based icons, stroke 2px, 24px grid"
-    },
-    "voiceAndTone": {
-      "tone": "Confident, approachable, no-nonsense",
-      "dos": ["Be concise", "Be human", "Give evidence"],
-      "donts": ["Overpromise", "Use buzzword-heavy copy"]
-    }
-  },
-  "design": {
-    "lowFiSketches": [
-      {
-        "name": "homepage-structure",
-        "file": "/design/lowfi/homepage-structure.sketch",
-        "notes": "Hero, services cards, case studies, footer. Prioritize quick scanning."
-      },
-      {
-        "name": "about-page-flow",
-        "file": "/design/lowfi/about-page.sketch",
-        "notes": "Company timeline, leadership, mission and values"
-      }
-    ],
-    "freestyleMoodboard": {
-      "mood": "Modern, calm, confident",
-      "textures": ["subtle-gradients", "soft-shadows", "glass-panels"],
-      "illustrationStyle": "Flat, geometric, friendly",
-      "motion": "Micro-interactions, smooth easing (cubic-bezier)"
-    },
-    "dribbbleReferences": [
-      "https://dribbble.com/shots/xxxxxx-design-system",
-      "https://dribbble.com/shots/yyyyyy-enterprise-dashboard",
-      "https://dribbble.com/shots/zzzzzz-landing-page-hero"
-    ],
-    "designTokens": {
-      "spacing": {
-        "xs": 4,
-        "sm": 8,
-        "md": 16,
-        "lg": 24,
-        "xl": 40
-      },
-      "borderRadius": {
-        "sm": 6,
-        "md": 12,
-        "lg": 20
-      }
-    }
-  },
+
   "frontend": {
     "pages": [
       {
@@ -408,65 +253,62 @@
             "id": "hero",
             "title": "Hero",
             "props": {
-              "heading": "Designing digital experiences that actually scale",
-              "subheading": "Product strategy, design systems, and engineering to ship better products.",
-              "cta": {
-                "text": "Get a demo",
-                "href": "/contact"
-              },
+              "heading": "We design, build, and scale digital products that actually work.",
+              "subheading": "From research to release, we help teams launch products people love and businesses can scale.",
+              "cta": { "text": "Get a demo", "href": "/contact" },
               "steps": [
                 {
-                  "label": "Empathize / Discover",
-                  "desc": "Conduct thorough research to gain a deep, human-centered understanding of the user and their problems.",
+                  "label": "Discover",
+                  "desc": "We dive deep into your audience, goals, and data to uncover real insights, not just assumptions.",
                   "image": {
-                    "webp": "/assets/discover.webp",
-                    "alt": "Empathize / Discover Image"
+                    "url": "/assets/people/discover.jpg",
+                    "alt": "Team conducting product discovery workshop"
                   }
                 },
                 {
                   "label": "Define",
-                  "desc": "Synthesize research findings into a clear, concise problem statement to align the team on the core challenge.",
+                  "desc": "Turn research into clarity. We outline challenges, success metrics, and user journeys that guide every next move.",
                   "image": {
-                    "webp": "/assets/define.webp",
-                    "alt": "Define Image"
+                    "url": "/assets/people/define.jpg",
+                    "alt": "Defining key user personas and problem statements"
                   }
                 },
                 {
-                  "label": "Ideate / Develop Ideas",
-                  "desc": "Brainstorm a wide range of potential solutions to the defined problem without immediate judgment.",
+                  "label": "Ideate",
+                  "desc": "Rapid ideation sessions where creativity meets strategy, exploring what’s possible before committing to code.",
                   "image": {
-                    "webp": "/assets/ideate.webp",
-                    "alt": "Ideate / Develop Ideas Image"
+                    "url": "/assets/people/ideate.jpg",
+                    "alt": "UX ideation and wireframe sketches"
                   }
                 },
                 {
                   "label": "Prototype",
-                  "desc": "Create low-cost, tangible representations of potential solutions that can be evaluated and tested.",
+                  "desc": "We bring ideas to life fast, interactive prototypes to visualize flows, test assumptions, and get instant feedback.",
                   "image": {
-                    "webp": "/assets/prototype.webp",
-                    "alt": "Prototype Image"
+                    "url": "/assets/people/prototype.jpg",
+                    "alt": "Prototype testing session"
                   }
                 },
                 {
-                  "label": "Testing",
-                  "desc": "Gather user feedback on prototypes to validate concepts, uncover issues, and learn what works and what doesn't.",
+                  "label": "Test",
+                  "desc": "Validate designs with real users. Every click, scroll, and reaction feeds back into the next iteration.",
                   "image": {
-                    "webp": "/assets/test.webp",
-                    "alt": "Test Image"
+                    "url": "/assets/people/test.jpg",
+                    "alt": "User testing in progress"
                   }
                 },
                 {
-                  "label": "Iterate and Implement",
-                  "desc": "Continuously refine the design based on testing results and prepare the final, improved solution for launch and ongoing monitoring.",
+                  "label": "Launch & Evolve",
+                  "desc": "We don’t stop at launch. Continuous iteration, performance tracking, and scaling support keep you growing.",
                   "image": {
-                    "webp": "/assets/iterate.webp",
-                    "alt": "Iterate and Implement Image"
+                    "url": "/assets/people/iterate.jpg",
+                    "alt": "Product team celebrating successful launch"
                   }
                 }
               ],
               "cardCta": {
-                "text": "Learn more about our services",
-                "href": "/about"
+                "text": "Explore our services",
+                "href": "/services"
               }
             }
           },
@@ -474,23 +316,23 @@
             "id": "about",
             "title": "About Us",
             "props": {
-              "heading": "Designing digital experiences that actually scale",
-              "subheading": "Product strategy, design systems, and engineering to ship better products.",
+              "heading": "Building digital products that empower people and strengthen brands.",
+              "subheading": "Strategy, design, and technology working in harmony.",
               "desc": [
-                "Product strategy, design systems, and engineering to ship better products.",
-                "Product strategy, design systems, and engineering to ship better products."
+                "We believe in human-centered innovation, designing products that are as intuitive as they are powerful.",
+                "By merging creative insight with engineering excellence, we help companies stay relevant in a fast-changing world."
               ],
               "image": [
                 {
-                  "webp": "/assets/person1.webp",
+                  "url": "/assets/people/person1.webp",
                   "alt": "About Us: Person 1"
                 },
                 {
-                  "webp": "/assets/person2.webp",
+                  "url": "/assets/people/person2.webp",
                   "alt": "About Us: Person 2"
                 },
                 {
-                  "webp": "/assets/person3.webp",
+                  "url": "/assets/people/person3.webp",
                   "alt": "About Us: Person 3"
                 }
               ],
@@ -498,12 +340,12 @@
                 {
                   "number": "10M",
                   "symbol": "+",
-                  "desc": "Parts manufactured with zero"
+                  "desc": "Impressions served monthly"
                 },
                 {
                   "number": "98",
                   "symbol": "%",
-                  "desc": "On time delivey rate acroos"
+                  "desc": "Client satisfaction rate"
                 }
               ]
             }
@@ -513,81 +355,81 @@
             "title": "Our Services",
             "props": {
               "offsetImg": {
-                "src": "assets/team-discussion.webp",
+                "url": "/assets/people/people-working.jpg",
                 "alt": "Creative team collaborating"
               },
               "services": [
                 {
-                  "serviceName": "Designing digital experiences that actually scale",
+                  "serviceName": "Designing human-centered products for modern teams",
                   "details": [
                     {
-                      "label": "UI/UX Design",
-                      "desc": "We craft intuitive, conversion-driven interfaces optimized for both mobile and desktop.",
-                      "icon": "design"
+                      "label": "UX Research & Strategy",
+                      "desc": "Turning insights into actionable product direction.",
+                      "icon": "search"
                     },
                     {
-                      "label": "Brand Identity",
-                      "desc": "Logo systems, color palettes, and visual languages that make your brand stand out.",
+                      "label": "UI Design Systems",
+                      "desc": "Consistent visual language and scalable component libraries.",
+                      "icon": "layout"
+                    },
+                    {
+                      "label": "Brand Experience",
+                      "desc": "Aligning brand identity with digital touchpoints.",
                       "icon": "palette"
                     },
                     {
                       "label": "Interactive Prototyping",
-                      "desc": "Test product ideas faster using high-fidelity clickable prototypes built in Figma.",
+                      "desc": "Clickable concepts that bridge ideas and execution.",
                       "icon": "layers"
-                    },
-                    {
-                      "label": "Design Systems",
-                      "desc": "Reusable component libraries to ensure visual consistency across every touchpoint.",
-                      "icon": "layout"
                     }
                   ]
                 },
                 {
-                  "serviceName": "Building scalable, data-driven web platforms",
+                  "serviceName": "Engineering scalable digital ecosystems",
                   "details": [
                     {
-                      "label": "Full-Stack Development",
-                      "desc": "Modern React + Node.js architecture designed for performance and maintainability.",
+                      "label": "Web Application Development",
+                      "desc": "Building responsive, maintainable, and fast interfaces.",
                       "icon": "code"
                     },
                     {
-                      "label": "API Integration",
-                      "desc": "Secure REST and GraphQL integrations that connect your app to anything, anywhere.",
+                      "label": "API Architecture",
+                      "desc": "Reliable integrations connecting your product stack.",
                       "icon": "api"
                     },
                     {
-                      "label": "Cloud Deployment",
-                      "desc": "CI/CD pipelines on Firebase, Render, or AWS for seamless scaling and uptime.",
+                      "label": "Cloud Infrastructure",
+                      "desc": "Optimized deployments with CI/CD and containerized workflows.",
                       "icon": "cloud"
                     },
                     {
-                      "label": "Analytics & Monitoring",
-                      "desc": "Real-time dashboards and tracking tools that turn data into clear business insight.",
-                      "icon": "chart"
+                      "label": "Performance & Security",
+                      "desc": "Monitoring, load balancing, and best-practice compliance.",
+                      "icon": "shield"
                     }
                   ]
                 },
                 {
-                  "serviceName": "Strategic partnership for long-term growth",
+                  "serviceName": "Accelerating growth through long-term partnership",
                   "details": [
                     {
-                      "label": "Digital Strategy",
-                      "desc": "We align technology, design, and marketing for measurable business outcomes.",
+                      "label": "Digital Roadmapping",
+                      "desc": "Setting clear goals for sustainable product growth.",
                       "icon": "target"
                     },
                     {
-                      "label": "Automation",
-                      "desc": "Streamline internal operations with custom workflow automations and dashboards.",
+                      "label": "Workflow Automation",
+                      "desc": "Automating repetitive processes to save time and reduce error.",
                       "icon": "settings"
                     },
                     {
-                      "label": "Maintenance & Support",
-                      "desc": "Proactive monitoring, security updates, and version control done for you.",
-                      "icon": "shield"
+                      "label": "Lifecycle Support",
+                      "desc": "Continuous improvement through analytics and iteration.",
+                      "icon": "refresh"
                     },
                     {
-                      "label": "Growth Consulting",
-                      "desc": "From MVP validation to product-market fit — we guide your roadmap with data.",
+                      "label": "Growth Experimentation",
+                      "desc": "Rapid testing and validation to identify new opportunities.",
                       "icon": "rocket"
                     }
                   ]
@@ -596,31 +438,57 @@
             }
           },
           {
-            "id": "clients",
-            "title": "Customer Stories"
+            "id": "stories",
+            "title": "Clients",
+            "props": {
+              "text": {
+                "heading": "Customer",
+                "subheading": "Stories",
+                "caption": "Real partnerships, real outcomes. Here’s how our clients scaled faster, built smarter, and delivered better digital experiences with our support."
+              },
+              "clients": [
+                {
+                  "name": "Eva Ward",
+                  "title": "Chief Product Officer, Finora",
+                  "url": "/assets/clients/eva.jpg"
+                },
+                {
+                  "name": "Jason Lee",
+                  "title": "Founder & CTO, AeroStack",
+                  "url": "/assets/clients/jason.jpg"
+                },
+                {
+                  "name": "Clara Mitchell",
+                  "title": "Head of Experience, Nova Retail",
+                  "url": "/assets/clients/clara.jpg"
+                },
+                {
+                  "name": "David Chen",
+                  "title": "Operations Director, UrbanFlow",
+                  "url": "/assets/clients/david.jpg"
+                }
+              ]
+            }
           },
           {
-            "id": "cta-section",
+            "id": "cta",
             "title": "Ready To Start Your Project?",
-            "subtitle": "Let's discuss how we can help you achieve your manufacturing goals",
             "props": {
-              "cta": {
-                "text": "Get in touch",
-                "path": "/contact"
-              },
+              "heading": "Let’s build something that moves your business forward.",
+              "cta": { "text": "Get in touch", "path": "/contact" },
               "extras": {
                 "image": [
                   {
-                    "webp": "/assets/person1.webp",
-                    "alt": "Get in touch: person 1"
+                    "url": "/assets/people/cta1.jpg",
+                    "alt": "Creative director discussing project with client"
                   },
                   {
-                    "webp": "/assets/person2.webp",
-                    "alt": "Get in touch: person 2"
+                    "url": "/assets/people/cta2.jpg",
+                    "alt": "Project manager at digital studio workspace"
                   }
                 ],
-                "text": "We'll help meet your manufacturing goals",
-                "rating": 5.0
+                "text": "From product design to full-scale development, our team partners with you to deliver measurable impact.",
+                "rating": "5.0"
               }
             }
           }
@@ -635,16 +503,14 @@
             "id": "mission",
             "component": "CompanyMission",
             "props": {
-              "missionText": null,
-              "visionText": null
+              "missionText": "Designing products people love.",
+              "visionText": "Scale with empathy and data."
             }
           },
           {
             "id": "leadership",
             "component": "TeamGrid",
-            "props": {
-              "itemsSource": "leadership"
-            }
+            "props": { "itemsSource": "leadership" }
           },
           {
             "id": "timeline",
@@ -694,116 +560,33 @@
         ]
       }
     ],
-    "uiComponents": [
-      "Hero",
-      "ServicesGrid",
-      "TeamGrid",
-      "CaseStudyCard",
-      "ClientLogoStrip",
-      "Footer",
-      "Navbar",
-      "ContactForm",
-      "SEOHead"
-    ],
-    "assets": {
-      "images": "/assets/*.png",
-      "svg": "/assets/icons/*.svg"
-    },
-    "i18n": {
-      "enabled": false,
-      "suggested": ["en-US", "id-ID"]
-    }
+    "assets": { "images": "/assets/*.png", "svg": "/assets/icons/*.svg" },
+    "i18n": { "enabled": false, "suggested": ["en-US", "id-ID"] }
   },
-  "highLevelArchitecture": {
-    "summary": "Static single-page application served from CDN. Site content is static JSON. No server backend required for public site. Optional serverless endpoint for contact form if needed.",
-    "diagramText": "Browser -> CDN -> Static SPA (React/Vite) -> static JSON (embedded or fetched) -> optional serverless function (contactForm) -> mail relay",
-    "components": {
-      "frontend": {
-        "framework": "React (Vite)",
-        "rendering": "Client-side SPA or static prerender with SSG",
-        "routing": "React Router",
-        "state": "Local state (Context / Zustand) only if needed"
-      },
-      "hosting": {
-        "options": ["Vercel", "Netlify", "Firebase Hosting"],
-        "cdn": "Built-in CDN (Vercel/Netlify) or Cloudflare"
-      },
-      "data": {
-        "primary": "static JSON (this file)",
-        "alternate": "Headless CMS (Contentful / Sanity / Notion) for non-dev editing"
-      },
-      "contactForm": {
-        "noBackendMode": "mailto or formsubmit.co",
-        "optionalServerless": {
-          "provider": "Vercel Serverless / Netlify Functions / Firebase Cloud Functions",
-          "purpose": "Send email, store lead to Google Sheets or Zapier"
-        }
-      },
-      "analytics": {
-        "recommended": [
-          "Plausible (privacy-first)",
-          "Google Analytics 4 optional"
-        ],
-        "performance": "Defer analytics until after first paint"
-      },
-      "monitoring": {
-        "errorReporting": "Sentry optional",
-        "uptime": "External uptime monitor if using serverless endpoints"
-      },
-      "security": {
-        "https": true,
-        "helmetHeaders": "Set by hosting provider",
-        "contentSecurityPolicy": "Restrictive but allow CDN + analytics"
-      }
-    }
-  },
+
   "seo": {
-    "defaultMeta": {
-      "titleTemplate": "%s · Oxford Digital Works",
-      "defaultTitle": "Oxford Digital Works | Digital Product Studio",
-      "description": "We build web & mobile products for startups and enterprises. Product strategy, design systems, and engineering.",
-      "keywords": [
-        "digital agency",
-        "product design",
-        "react development",
-        "ui ux",
-        "jakarta agency"
-      ],
-      "openGraph": {
-        "type": "website",
-        "image": "/assets/og-image.png",
-        "locale": "en_US"
-      },
-      "twitterCard": {
-        "card": "summary_large_image",
-        "creator": "@oxforddigitalwk"
-      }
-    },
-    "sitemap": [
-      "/",
-      "/services/:id",
-      "/stories/:cust",
-      "/contact",
-      "/privacy-policy",
-      "/terms-conditions"
+    "titleTemplate": "%s · Oxford Digital Works",
+    "defaultTitle": "Oxford Digital Works | Digital Product Studio",
+    "description": "We build scalable web and mobile products for startups and enterprises.",
+    "keywords": [
+      "digital agency",
+      "ui ux",
+      "react development",
+      "jakarta tech"
     ],
+    "openGraph": {
+      "type": "website",
+      "image": "/assets/og-image.png",
+      "locale": "en_US"
+    },
+    "twitterCard": {
+      "card": "summary_large_image",
+      "creator": "@oxforddigitalwk"
+    },
+    "sitemap": ["/", "/about", "/services", "/case-studies", "/contact"],
     "robots": "User-agent: *\nAllow: /"
   },
-  "contentStrategy": {
-    "blog": {
-      "enabled": false,
-      "suggestedTopics": [
-        "Product leadership",
-        "Design systems",
-        "Case studies",
-        "Engineering best practices"
-      ]
-    },
-    "pressKit": {
-      "url": "/press",
-      "assets": ["/assets/press/logo.png", "/assets/press/one-pager.pdf"]
-    }
-  },
+
   "careers": {
     "openRoles": [
       {
@@ -812,7 +595,7 @@
         "team": "Engineering",
         "location": "Jakarta / Remote",
         "type": "Full-time",
-        "summary": "React + TypeScript, design systems experience required",
+        "summary": "React + TypeScript with strong design system experience.",
         "applyEmail": "careers@oxford-digital.example"
       },
       {
@@ -821,126 +604,28 @@
         "team": "Design",
         "location": "Remote",
         "type": "Contract",
-        "summary": "System thinking, prototyping, and Figma expertise",
+        "summary": "System thinking and prototyping with Figma expertise.",
         "applyEmail": "careers@oxford-digital.example"
       }
     ],
     "benefits": [
       "Flexible hours",
-      "Work-from-home stipend",
-      "Health benefits (local)",
+      "Remote stipend",
+      "Health benefits",
       "Learning budget"
     ]
   },
+
   "pressAndAwards": [
     {
-      "title": "Top 10 Product Agencies | Local Tech Magazine",
+      "title": "Top 10 Product Agencies · Local Tech Magazine",
       "date": "2022-11-12",
       "link": "/press/top-10-product-agencies"
     }
   ],
-  "analyticsAndMetrics": {
-    "dashboards": [
-      {
-        "name": "Acquisition Overview (placeholder)",
-        "description": "Page views, referral source, conversion from contact form"
-      }
-    ],
-    "keyMetricsToTrack": [
-      "Unique visitors",
-      "Conversion rate (contact form)",
-      "Time on page",
-      "Bounce rate"
-    ]
-  },
-  "polishAndE2EQA": {
-    "preLaunchChecklist": [
-      "All pages have meta title + description",
-      "Images optimized (webp) and sized",
-      "Mobile & desktop responsive check",
-      "Links validated (no 404)",
-      "Accessibility basic audit (contrast, alt text, landmark roles)",
-      "Favicon and touch icons present",
-      "Robots.txt and sitemap in public",
-      "Cookie / analytics consent (if GA used)"
-    ],
-    "e2eTestCases": [
-      {
-        "id": "e2e-001",
-        "title": "Homepage loads and hero CTA navigates",
-        "steps": [
-          "Open /",
-          "Assert hero heading visible",
-          "Click primary CTA",
-          "Assert navigation to /contact (or mailto triggered)"
-        ]
-      },
-      {
-        "id": "e2e-002",
-        "title": "Contact form submission (mailto fallback)",
-        "steps": [
-          "Open /contact",
-          "Fill required fields",
-          "Click submit",
-          "Assert a mailto link is opened or success message is shown"
-        ]
-      },
-      {
-        "id": "e2e-003",
-        "title": "Responsive navigation",
-        "steps": [
-          "Set viewport to mobile",
-          "Open burger menu",
-          "Assert visible nav links",
-          "Navigate to /about and assert page title"
-        ]
-      },
-      {
-        "id": "e2e-004",
-        "title": "SEO meta tags present",
-        "steps": [
-          "Open /",
-          "Check document title contains 'Oxford Digital Works'",
-          "Check og:image meta exists"
-        ]
-      }
-    ],
-    "sampleCypressScript": "describe('Home page', () => { it('loads and navigates', () => { cy.visit('/'); cy.contains('Designing digital experiences that scale'); cy.get('[data-cy=cta-get-demo]').click(); cy.url().should('include','/contact'); }); });"
-  },
-  "devHints": {
-    "repo": "github.com/oxford-digital-works/website (placeholder)",
-    "recommendedSetup": [
-      "Vite + React + TypeScript (optional)",
-      "Tailwind CSS for quick styles or custom CSS-in-JS",
-      "React Router for page routing",
-      "Use static data import: import data from '/src/data/data.json'",
-      "Deploy to Vercel / Netlify / Firebase Hosting"
-    ],
-    "imageOptimization": "Use srcset + lazy loading + webp fallback",
-    "performanceTips": [
-      "Preload hero image",
-      "Critical CSS inline",
-      "Defer non-critical scripts"
-    ]
-  },
-  "migrationNotes": {
-    "toHeadlessCMS": {
-      "mappingHints": "Top-level keys map to collections: pages, services, clients, caseStudies, leadership, brand",
-      "fieldsToNormalize": [
-        "dates as ISO strings",
-        "images to CDN URLs",
-        "IDs to slug-safe strings"
-      ]
-    }
-  },
-  "examples": {
-    "howToLoad": {
-      "jsImportExample": "import company from './data/data.json'; console.log(company.meta.name);",
-      "fetchExample": "fetch('/data/data.json').then(r=>r.json()).then(data=>console.log(data.meta.name));"
-    }
-  },
+
   "metaGenerated": {
     "createdAt": "2025-11-09T00:00:00+07:00",
-    "createdBy": "placeholder-generator-v1-by-bazel"
+    "createdBy": "company-profile-seed-by-bazel-v2"
   }
 }
