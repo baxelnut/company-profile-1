@@ -162,65 +162,6 @@
     "orgChart": "/assets/org-chart.svg"
   },
 
-  "services": [
-    {
-      "id": "svc-01",
-      "title": "Product Strategy & Discovery",
-      "summary": "Define, validate, and plan the right product through user research and rapid discovery.",
-      "deliverables": ["Product roadmap", "Prototype", "User personas", "PRD"],
-      "engagementModel": ["Fixed Price", "Time & Materials"],
-      "startingPriceUSD": 8000
-    },
-    {
-      "id": "svc-02",
-      "title": "UX/UI Design & Design Systems",
-      "summary": "Craft user experiences and scalable design systems for consistent cross-platform delivery.",
-      "deliverables": [
-        "Wireframes",
-        "UI Kit",
-        "Design library",
-        "Accessibility report"
-      ],
-      "startingPriceUSD": 6000
-    },
-    {
-      "id": "svc-03",
-      "title": "Web & Mobile Engineering",
-      "summary": "Modern front-end and backend solutions using React, Node.js, and scalable cloud infra.",
-      "techStack": [
-        "React",
-        "Vite",
-        "Next.js",
-        "Node.js",
-        "TypeScript",
-        "Supabase",
-        "Firebase",
-        "Docker"
-      ],
-      "startingPriceUSD": 12000
-    },
-    {
-      "id": "svc-04",
-      "title": "Cloud & Data Engineering",
-      "summary": "Analytics pipelines, dashboards, and data warehousing for smarter business decisions.",
-      "deliverables": [
-        "ETL pipelines",
-        "Warehouse schema",
-        "Looker/Metabase dashboards"
-      ],
-      "startingPriceUSD": 10000
-    },
-    {
-      "id": "svc-05",
-      "title": "Maintenance & Support",
-      "summary": "Ongoing monitoring, updates, and security patching to keep your platform reliable.",
-      "plans": [
-        { "name": "Standard", "monthlyUSD": 500, "responseTimeHours": 48 },
-        { "name": "Priority", "monthlyUSD": 1500, "responseTimeHours": 4 }
-      ]
-    }
-  ],
-
   "products": [
     {
       "id": "prd-01",
@@ -360,7 +301,9 @@
               },
               "services": [
                 {
+                  "slug": "product-strategy",
                   "serviceName": "Designing human-centered products for modern teams",
+                  "summary": "Strategic product discovery and design research that define the right direction before a single line of code.",
                   "details": [
                     {
                       "label": "UX Research & Strategy",
@@ -385,7 +328,9 @@
                   ]
                 },
                 {
-                  "serviceName": "Engineering scalable digital ecosystems",
+                  "slug": "engineering-and-cloud",
+                  "serviceName": "Crafting scalable digital ecosystems that evolve with technology",
+                  "summary": "Modern web, mobile, and cloud engineering using React, Node.js, and CI/CD best practices.",
                   "details": [
                     {
                       "label": "Web Application Development",
@@ -395,7 +340,7 @@
                     {
                       "label": "API Architecture",
                       "desc": "Reliable integrations connecting your product stack.",
-                      "icon": "api"
+                      "icon": "appIndicator"
                     },
                     {
                       "label": "Cloud Infrastructure",
@@ -405,22 +350,24 @@
                     {
                       "label": "Performance & Security",
                       "desc": "Monitoring, load balancing, and best-practice compliance.",
-                      "icon": "shield"
+                      "icon": "shieldCheck"
                     }
                   ]
                 },
                 {
+                  "slug": "growth-and-support",
                   "serviceName": "Accelerating growth through long-term partnership",
+                  "summary": "Ongoing optimization, analytics, and automation to sustain business growth post-launch.",
                   "details": [
                     {
                       "label": "Digital Roadmapping",
                       "desc": "Setting clear goals for sustainable product growth.",
-                      "icon": "target"
+                      "icon": "bullseye"
                     },
                     {
                       "label": "Workflow Automation",
                       "desc": "Automating repetitive processes to save time and reduce error.",
-                      "icon": "settings"
+                      "icon": "gearFill"
                     },
                     {
                       "label": "Lifecycle Support",
@@ -448,24 +395,64 @@
               },
               "clients": [
                 {
+                  "id": "eva-ward",
                   "name": "Eva Ward",
                   "title": "Chief Product Officer, Finora",
-                  "url": "/assets/clients/eva.jpg"
+                  "url": "/assets/clients/eva.jpg",
+                  "story": {
+                    "headline": "Driving Finora’s Product Acceleration",
+                    "description": "How Finora partnered with Oxford Digital Works to streamline their product pipeline and ship 3x faster.",
+                    "stats": {
+                      "impact": "300% faster release cycle",
+                      "timeframe": "6 months",
+                      "region": "Singapore HQ"
+                    }
+                  }
                 },
                 {
+                  "id": "jason-lee",
                   "name": "Jason Lee",
                   "title": "Founder & CTO, AeroStack",
-                  "url": "/assets/clients/jason.jpg"
+                  "url": "/assets/clients/jason.jpg",
+                  "story": {
+                    "headline": "Building Scalable Infrastructure for AeroStack",
+                    "description": "We helped AeroStack move from MVP chaos to a robust system architecture ready for enterprise scaling.",
+                    "stats": {
+                      "impact": "99.98% uptime",
+                      "timeframe": "8 months",
+                      "region": "Seoul"
+                    }
+                  }
                 },
                 {
+                  "id": "clara-mitchell",
                   "name": "Clara Mitchell",
                   "title": "Head of Experience, Nova Retail",
-                  "url": "/assets/clients/clara.jpg"
+                  "url": "/assets/clients/clara.jpg",
+                  "story": {
+                    "headline": "Reimagining Nova Retail’s Omnichannel UX",
+                    "description": "Our team delivered a unified online–offline experience that boosted engagement and conversion rates.",
+                    "stats": {
+                      "impact": "+45% conversion lift",
+                      "timeframe": "4 months",
+                      "region": "London"
+                    }
+                  }
                 },
                 {
+                  "id": "david-chen",
                   "name": "David Chen",
                   "title": "Operations Director, UrbanFlow",
-                  "url": "/assets/clients/david.jpg"
+                  "url": "/assets/clients/david.jpg",
+                  "story": {
+                    "headline": "Optimizing Operations for UrbanFlow",
+                    "description": "A full workflow automation project that improved visibility and efficiency across 12 regional offices.",
+                    "stats": {
+                      "impact": "-35% operational cost",
+                      "timeframe": "5 months",
+                      "region": "Hong Kong"
+                    }
+                  }
                 }
               ]
             }

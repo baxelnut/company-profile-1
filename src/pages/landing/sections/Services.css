@@ -10,6 +10,7 @@
   flex-direction: row;
   align-items: end;
   background-color: var(--text);
+  cursor: default;
 }
 .landing .card.service-container > div {
   flex: 1;
@@ -27,11 +28,12 @@
   height: 60px;
   aspect-ratio: 1;
   border-radius: 0.75rem;
-  padding: 0.25rem;
+  padding: 0;
   background-color: var(--border-color);
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: color 0.6s ease-in-out;
 }
 
 .landing .services .content-container {
@@ -50,6 +52,7 @@
   border-radius: 2rem;
   padding: 0;
   border: none;
+  cursor: default;
 }
 
 .big-pic-container img {
@@ -58,4 +61,18 @@
   object-fit: cover;
   aspect-ratio: inherit;
   border-radius: inherit;
+}
+
+.services .service-item {
+  cursor: pointer;
+}
+.services .service-item * {
+  transition: color 0.3s ease-in-out;
+}
+.services .service-item:hover .service-icon-container {
+  background-color: rgba(var(--primary-rgb), 0.25);
+}
+.services .service-item:hover * {
+  color: var(--primary);
+  fill: var(--primary);
 }

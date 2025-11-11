@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import "./MenuNav.css";
 
 export default function MenuNav({ menu }) {
+  if (!menu) return null;
+
   const [active, setActive] = useState(null);
 
   useEffect(() => {

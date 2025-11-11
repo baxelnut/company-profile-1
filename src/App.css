@@ -9,8 +9,14 @@
   backdrop-filter: blur(10px);
 }
 
+.page.load {
+  min-height: calc(100vh - 40px);
+  justify-content: center;
+}
+
 .page {
   width: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -31,12 +37,6 @@
   position: absolute;
   inset: 0;
   z-index: -1;
-}
-
-.page.load-status {
-  height: 100%;
-  min-height: 100vh;
-  justify-content: center;
 }
 
 .page > div:not(.fade-in) {

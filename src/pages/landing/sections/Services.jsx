@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // Style
 import "./Services.css";
 // Components
@@ -10,6 +11,11 @@ import { SVG_PATHS } from "../../../data/utilsData";
 export default function Services({ props, id, title }) {
   const serviceProps = props || {};
   const [activeIndex, setActiveIndex] = useState(0);
+  const navigate = useNavigate();
+
+  const handleClick = (serviceId) => {
+    navigate(`/services/${serviceId}`);
+  };
 
   const handlePrev = () => {
     setActiveIndex((prev) =>
@@ -60,9 +66,17 @@ export default function Services({ props, id, title }) {
         <div className="content-container">
           <div className="cards-container grid2">
             {activeService?.details?.map((detail, j) => (
-              <div key={j} className="service-item">
+              <div
+                key={j}
+                className="service-item"
+                onClick={() => handleClick(activeService.slug)}
+              >
                 <div className="service-icon-container">
-                  <Icon path={SVG_PATHS[detail.icon]} fill="var(--bg)" />
+                  <Icon
+                    path={SVG_PATHS[detail.icon]}
+                    fill="var(--bg)"
+                    size={24}
+                  />
                 </div>
                 <div className="service-info">
                   <h6>{detail.label}</h6>

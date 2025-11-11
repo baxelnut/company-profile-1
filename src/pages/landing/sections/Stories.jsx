@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 // Style
 import "./Stories.css";
 // Components
@@ -10,6 +11,7 @@ export default function Stories({ id, props, title }) {
   const clientProps = props || {};
   const { text = {}, clients = [] } = clientProps;
 
+  const navigate = useNavigate();
   const [index, setIndex] = useState(0);
   const visibleClients = clients.slice(index, index + 3);
 
@@ -18,6 +20,10 @@ export default function Stories({ id, props, title }) {
   };
   const prev = () => {
     if (index > 0) setIndex(index - 1);
+  };
+
+  const handleCardClick = (clientId) => {
+    navigate(`/stories/${clientId}`);
   };
 
   return (
@@ -51,6 +57,7 @@ export default function Stories({ id, props, title }) {
             key={i}
             className="card client-container imaged-card"
             style={{ backgroundImage: `url(${client.url})` }}
+            onClick={() => handleCardClick(client.id)}
           >
             <h4>{client.name}</h4>
             <p>{client.title}</p>
