@@ -64,7 +64,7 @@ export default function Services({ props, id, title }) {
         </div>
 
         <div className="content-container">
-          <div className="cards-container grid2">
+          <div className="cards-container row service-item-container">
             {activeService?.details?.map((detail, j) => (
               <div
                 key={j}

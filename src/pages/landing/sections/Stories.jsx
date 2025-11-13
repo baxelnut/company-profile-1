@@ -31,15 +31,15 @@ export default function Stories({ id, props, title }) {
       <div className="lead">
         <div className="title-container">
           <h6 className="title small-h">{title}</h6>
-          {text.heading && <h4 className="big-h">{text.heading}</h4>}
-          {text.subheading && (
+          <div className="heading-container">
+            <h4 className="big-h">{text.heading}</h4>
             <h4 className="big-h faded">{text.subheading}</h4>
-          )}
+          </div>
         </div>
 
         <div className="caption-container">
           {text.caption && <p>{text.caption}</p>}
-          <div className="cards-container row button-container">
+          <div className="cards-container row button-container desktop">
             <Button
               onClick={prev}
               iconPath={SVG_PATHS.chevronLeft}
@@ -51,7 +51,7 @@ export default function Stories({ id, props, title }) {
         </div>
       </div>
 
-      <div className="cards-container flex-slider">
+      <div className="cards-container grid3 flex-slider">
         {visibleClients.map((client, i) => (
           <div
             key={i}
@@ -63,6 +63,16 @@ export default function Stories({ id, props, title }) {
             <p>{client.title}</p>
           </div>
         ))}
+      </div>
+
+      <div className="cards-container row button-container mobile">
+        <Button
+          onClick={prev}
+          iconPath={SVG_PATHS.chevronUp}
+          backgroundColor="rgba(var(--primary-rgb), 0.2)"
+          textColor="var(--primary)"
+        />
+        <Button onClick={next} iconPath={SVG_PATHS.chevronDown} />
       </div>
     </section>
   );

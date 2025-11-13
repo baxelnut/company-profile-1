@@ -6,7 +6,7 @@
 .landing .title-container .title {
   width: fit-content;
   background-color: var(--primary);
-  padding: 0.5rem 1.25rem;
+  padding: 0.25rem 1rem;
   border-radius: 360px;
   color: var(--on-primary);
 }
@@ -23,7 +23,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(var(--n700-rgb), 0.35);
+  background-color: rgba(var(--n700-rgb), 0.5);
   pointer-events: none;
   border-radius: inherit;
 }

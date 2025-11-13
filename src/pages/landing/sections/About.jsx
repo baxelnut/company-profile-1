@@ -20,14 +20,14 @@ export default function About({ props, id, title }) {
             <img src={img.url} alt={img.alt || `Image ${i + 1}`} />
           </div>
         ))}
-        {aboutProps.desc?.[0] && <p>{aboutProps.desc[0]}</p>}
+        <p>{aboutProps.desc[0]}</p>
       </div>
 
       <div className="cards-container grid2">
         <div className="spacer"></div>
         <div className="right-specs">
-          {aboutProps.desc?.[1] && <p>{aboutProps.desc[1]}</p>}
-          <div className="cards-container grid2">
+          <p>{aboutProps.desc[1]}</p>
+          <div className="cards-container row">
             {aboutProps.specs?.map((spec, i) => (
               <div key={i} className="spec-item">
                 <h1 className="big-h">

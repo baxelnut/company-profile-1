@@ -1,0 +1,8 @@
+.stories {
+  padding: var(--spacing-inline);
+}
+
+.stories img {
+  max-height: 50vh;
+  aspect-ratio: 1;
+}

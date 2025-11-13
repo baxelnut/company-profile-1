@@ -4,10 +4,10 @@
   flex-direction: column-reverse;
   align-items: center;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1rem;
   padding: var(--spacing-inline);
   text-align: center;
-  margin-bottom: 4rem;
+  margin-block: 2rem;
 }
 
 .cta .text-container,
@@ -25,7 +25,7 @@
 .cta .decoration-container {
   display: none;
   justify-content: space-between;
-  padding: 2rem;
+  padding: 1rem;
 }
 .cta .decoration-container img {
   width: 100%;
@@ -39,9 +39,11 @@
   gap: 0.5rem;
 }
 
+/* Tablet */
 @media (min-width: 768px) {
   .landing .cta {
     flex-direction: row;
+    margin-block: 0 4rem;
   }
 
   .cta .text-container,
@@ -49,7 +51,10 @@
     width: 40%;
     min-height: 60vh;
   }
+}
 
+/* Desktop */
+@media (min-width: 1024px) {
   .cta .decoration-container {
     display: flex;
   }

@@ -38,7 +38,7 @@ export default function Hero({ props, id }) {
         className="card imaged-card"
         style={{ backgroundImage: `url(${activeStep?.image.url})` }}
       >
-        <div className="steps-container">
+        <div className="cards-container row steps-container">
           {heroProps.steps?.map((step, i) => (
             <div
               key={i}
@@ -55,7 +55,7 @@ export default function Hero({ props, id }) {
         </div>
 
         <div className="card card-actions">
-          <h4>{activeDesc}</h4>
+          <h5>{activeDesc}</h5>
           <div className="hero-cta">
             <h6 className="small-h">{heroProps.cardCta.text}</h6>
             <Button iconPath={SVG_PATHS.chevronRight} type="submit" />

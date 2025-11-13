@@ -1,4 +1,4 @@
-import { useEffect, useState, useCallback } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 import { Link } from "react-router-dom";
 // Style
 import "./Header.css";
@@ -13,27 +13,30 @@ export default function Header({ menu }) {
   const [hidden, setHidden] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [lastScrollY, setLastScrollY] = useState(0);
 
+  const lastScrollY = useRef(0);
   const toggleMenu = useCallback(() => setIsMenuOpen((p) => !p), []);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentY = window.scrollY;
-      setScrolled(currentY > 50);
 
-      if (currentY > lastScrollY && currentY > 100) {
+      // hide if scrolling down, show if scrolling up
+      if (currentY > lastScrollY.current && currentY > 100) {
         setHidden(true);
       } else {
         setHidden(false);
       }
-      setLastScrollY(currentY);
 
-      // auto-close menu when scrolling
-      if (isMenuOpen) setIsMenuOpen(false);
+      setScrolled(currentY > 50);
+      lastScrollY.current = currentY;
     };
 
-    // close menu if user clicks/touches outside
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
     const handleClickOutside = (e) => {
       if (
         isMenuOpen &&
@@ -44,16 +47,13 @@ export default function Header({ menu }) {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
     window.addEventListener("touchstart", handleClickOutside);
     window.addEventListener("mousedown", handleClickOutside);
-
     return () => {
-      window.removeEventListener("scroll", handleScroll);
       window.removeEventListener("touchstart", handleClickOutside);
       window.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [lastScrollY, isMenuOpen]);
+  }, [isMenuOpen]);
 
   if (status !== "ready") return null;
 
@@ -71,12 +71,10 @@ export default function Header({ menu }) {
         <h5>{company.meta.name}</h5>
       </Link>
 
-      {/* Desktop Menu */}
       <div className="menu-desktop">
         <MenuNav menu={menu} />
       </div>
 
-      {/* Burger Icon */}
       <button
         className={`burger ${scrolled ? "scrolled" : ""}`}
         onClick={toggleMenu}
@@ -86,7 +84,6 @@ export default function Header({ menu }) {
         <span className="bar" />
       </button>
 
-      {/* Mobile Menu Overlay */}
       <div className={`menu-overlay ${isMenuOpen ? "open" : ""}`}>
         <button className="close" onClick={toggleMenu}>
           ✕
@@ -98,7 +95,6 @@ export default function Header({ menu }) {
         />
       </div>
 
-      {/* Dim background when menu open */}
       {isMenuOpen && <div className="overlay-bg" onClick={toggleMenu} />}
     </header>
   );

@@ -95,6 +95,10 @@
   flex: 1;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* Tablet and up */
 @media (min-width: 768px) {
   .cards-container.grid2 {
